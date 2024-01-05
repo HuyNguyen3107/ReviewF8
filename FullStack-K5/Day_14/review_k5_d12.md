@@ -59,7 +59,7 @@ Chưa có responsive màn này.
 
 - [x] Đánh giá chung bài tập về nhà: Bài tập làm tốt màn hình `max-width: 1994px`, bài làm chỉ đang có duy nhất responsive màn hình `max-width: 1200px` điều này sai **breakpoint** so với bản mẫu, cần chú ý hơn các **breakpoint** như bản mẫu để tránh responsive thiếu trường hợp và cần xử lý phần input đầu tiên của các form autofocus như bản mẫu. Nên áp dụng **grid-system** để responsive hiệu quả và dễ dàng hơn.
 
-##[Le Duc Anh](https://ducanhprogram.github.io/f8-fullstack-k5/Day-12/)
+## [Le Duc Anh](https://ducanhprogram.github.io/f8-fullstack-k5/Day-12/)
 
 - [x] Bài 1: Màn hình max-width: 1994px
 
@@ -123,7 +123,7 @@ Chưa có responsive màn này.
 
 - [x] Đánh giá chung bài tập về nhà: Bài làm **chưa** tốt. Bài làm còn nhiều chỗ chưa chỉnh chu, cần chú ý các breakpoint như bản mẫu để tránh responsive thiếu trường hợp và cần xử lý phần input đầu tiên của các form autofocus như bản mẫu. Cần dành nhiều thời gian hơn cho bài tập về nhà. Nên áp dụng **grid-system** để responsive hiệu quả và dễ dàng hơn.
 
-##[Nguyen Tien Dat](https://tiendat211294.github.io/f8_offline_k5/buoi-12/bai-tap-buoi-12.html)
+## [Nguyen Tien Dat](https://tiendat211294.github.io/f8_offline_k5/buoi-12/bai-tap-buoi-12.html)
 
 - [x] Bài 1: Màn hình max-width: 1994px
 
@@ -179,7 +179,7 @@ Link file css chưa hợp lý
 <link rel="stylesheet" href="css.css" />
 ```
 
-##[Bui Minh Chi](https://ronbanh549.github.io/f8-fullstack-k5/Day-12/index.html)
+## [Bui Minh Chi](https://ronbanh549.github.io/f8-fullstack-k5/Day-12/index.html)
 
 - [x] Bài 1: Màn hình max-width: 1994px
 
@@ -237,7 +237,7 @@ Link file css chưa hợp lý
     <link rel="stylesheet" href="./assets/css/styles.css">
 ```
 
-##[Nguyen Duc Nhat](https://nhat0712.github.io/f8-FS-OL/Day%2012/bai12new)
+## [Nguyen Duc Nhat](https://nhat0712.github.io/f8-FS-OL/Day%2012/bai12new)
 
 - [x] Bài 1: Màn hình max-width: 1994px
 
@@ -289,7 +289,7 @@ Chưa có responsive màn này.
 
 - [x] Đánh giá chung bài tập về nhà: Bài làm còn nhiều chỗ chưa chỉnh chu, cần chú ý các breakpoint như bản mẫu để tránh responsive thiếu trường hợp và cần xử lý phần input đầu tiên của các form autofocus như bản mẫu. Cần dành nhiều thời gian hơn cho bài tập về nhà. Nên áp dụng **grid-system** để responsive hiệu quả và dễ dàng hơn.
 
-##[Nguyen Van Thang](https://nvthang391.github.io/F8-FSK5/Day_12/bai1.html)
+## [Nguyen Van Thang](https://nvthang391.github.io/F8-FSK5/Day_12/bai1.html)
 
 - [x] Bài 1: Màn hình max-width: 1994px
 
@@ -332,7 +332,7 @@ Chưa có responsive màn này.
 
 - [x] Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý các breakpoint như bản mẫu để tránh responsive thiếu trường hợp và cần xử lý phần input đầu tiên của các form autofocus như bản mẫu. Nên áp dụng **grid-system** để responsive hiệu quả và dễ dàng hơn. Nên tạo folders **images** để chứa các ảnh và nên đổi lại tên ảnh để dễ dàng quản lý hơn.
 
-##[Dao Quang Hung](https://hungsk5.github.io/F8-Offline-SK5/Day12/baitap1.html)
+## [Dao Quang Hung](https://hungsk5.github.io/F8-Offline-SK5/Day12/baitap1.html)
 
 - [x] Bài 1: Màn hình max-width: 1994px
 
