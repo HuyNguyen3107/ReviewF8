@@ -16,15 +16,21 @@ Phần `landing__title` đang bị cách xa `logo` hơn so với bản mẫu do 
 Phẩn `landing-form__register` chưa có `form-text` như trong bản mẫu:
 
 - Bản mẫu:
+
   ![](./images/ngohoangkim2.png)
+
 - Bài làm:
+
   ![](./images/ngohoangkim1.png)
 
 Khi người dùng chuyển sang form đăng ký thì nội dung của thẻ `button` cần đổi thành **Register Now!** như bản mẫu.
 
 - Bản mẫu:
+
   ![](./images/ngohoangkim3.png)
+
 - Bài làm:
+
   ![](./images/ngohoangkim4.png)
 
 - [x] Bài 2: Màn hình max-width: 1500px
