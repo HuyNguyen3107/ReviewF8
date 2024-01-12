@@ -170,7 +170,7 @@ Bài làm:
 
 - Khoảng cách giữa phần **sidebar** với phần **header** và phần **main** đang bằng 0 do thuộc tính `gap: 0px 0px;` trong class **wrapper-inner**, nên set lại khoảng cách thành `gap: 0px 38px;`.
 
-- Phần **Help Center** chưa được `fixed`.
+- Phần **Help Center** chưa được `fixed`.``
 
 - Nên thêm `cursor:pointer` khi hover vào các ảnh để người dùng có cảm giác có thể ấn vào được.
 

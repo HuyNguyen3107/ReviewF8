@@ -269,7 +269,7 @@ Link file css chưa hợp lý
 
   Chưa có responsive màn này.
 
-- [x] Bài 3: Màn hình max-width: 600px
+- [x] Bài 3: Màn hình max-width: 1365px
 
   **Bài làm tốt**
 
