@@ -1,4 +1,4 @@
-# Huy review bài tập về nhà buổi 20 - Lớp Fullstack K5
+# Huy review bài tập về nhà buổi 21 - Lớp Fullstack K5
 
 ## [Ngo Hoang Kim](https://github.com/kzau1612/FSK5/blob/backup/FSK5/day_21)
 
