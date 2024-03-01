@@ -1,19 +1,18 @@
-Array.prototype.reduce2 = function (callback, initialValue) {
-  var index = 0;
-  var value = initialValue;
-  if (!initialValue) {
-    value = this[0];
-    index = 1;
-  }
-  for (; index < this.length; index++) {
-    value = callback.call(this, value, this[index], index);
-  }
-  return value;
+Number.prototype.getCurrency = function (currencyUnit) {
+  return this.toLocaleString("vi-VN") + " " + currencyUnit;
 };
-var arr = ["a", 1, true, undefined];
-console.log(
-  arr.reduce2(function (a, b) {
-    console.log(a, b);
-    return a + b;
-  })
-);
+
+String.prototype.getCurrency = function (currencyUnit) {
+  var numberValue = parseFloat(this);
+  if (!isNaN(numberValue)) {
+    return numberValue.toLocaleString("vi-VN") + " " + currencyUnit;
+  } else {
+    return "Invalid number";
+  }
+};
+
+var price1 = true;
+console.log(price1.getCurrency("đ")); // Hiển thị: 12,000 đ
+
+var price2 = "1200000";
+console.log(price2.getCurrency("đ")); // Hiển thị: 12,000,000 đ
