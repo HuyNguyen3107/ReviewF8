@@ -2,7 +2,7 @@
 
 ## [Le Tung Duong](https://github.com/duong1801/f8-fullstack-k5/blob/main/Day-25/main.js)
 
-- [x] Bài 1:
+**[x] Bài 1:**
 
 - **Bài làm tốt**
 
@@ -12,50 +12,50 @@
 
 - Có thể tham khảo đoạn code sau:
 
-```js
-function sum(...args) {
-  var total = 0;
-  for (value of args) {
-    if (
-      (Array.isArray(value) && value.length > 1) ||
-      value === true ||
-      value === false
-    ) {
-      return `Giá trị không hợp lệ.`;
+  ```js
+  function sum(...args) {
+    var total = 0;
+    for (value of args) {
+      if (
+        (Array.isArray(value) && value.length > 1) ||
+        value === true ||
+        value === false
+      ) {
+        return `Giá trị không hợp lệ.`;
+      }
+      value = +value;
+      if (!Number.isNaN(value) && value !== Infinity && value !== Infinity) {
+        total += value;
+      } else {
+        return `Giá trị không hợp lệ.`;
+      }
     }
-    value = +value;
-    if (!Number.isNaN(value) && value !== Infinity && value !== Infinity) {
-      total += value;
-    } else {
-      return `Giá trị không hợp lệ.`;
-    }
+    return total;
   }
-  return total;
-}
-console.log(sum(1, 2, 3, 4, 5, [1], "1", true, ["a"]));
-```
+  console.log(sum(1, 2, 3, 4, 5, [1], "1", true, ["a"]));
+  ```
 
-- [x] Bài 2:
+**[x] Bài 2:**
 
 - **Bài làm rất tốt**
 
-- [x] Bài 3:
+**[x] Bài 3:**
 
 - **Bài làm rất tốt**
 
-- [x] Bài 4:
+**[x] Bài 4:**
 
 - **Bài làm rất tốt**
 
-- [x] Bài 5:
+**[x] Bài 5:**
 
 - **Bài làm rất tốt**
 
-- [x] Đánh giá chung: Bài làm rất tốt, chỉ cần lưu ý các trường hợp đặc biệt để hoàn thiện hơn.
+**[x] Đánh giá chung:** Bài làm rất tốt, chỉ cần lưu ý các trường hợp đặc biệt để hoàn thiện hơn.
 
 ## [Ngo Hoang Kim](https://github.com/kzau1612/FSK5/blob/backup/FSK5/day_25/js)
 
-- [x] Bài 1:
+**[x] Bài 1:**
 
 - **Bài làm chưa tốt**
 
@@ -65,54 +65,54 @@ console.log(sum(1, 2, 3, 4, 5, [1], "1", true, ["a"]));
 
 - Có thể tham khảo đoạn code sau
 
-```js
-function sum(...args) {
-  var total = 0;
-  for (value of args) {
-    if (
-      (Array.isArray(value) && value.length > 1) ||
-      value === true ||
-      value === false
-    ) {
-      return `Giá trị không hợp lệ.`;
+  ```js
+  function sum(...args) {
+    var total = 0;
+    for (value of args) {
+      if (
+        (Array.isArray(value) && value.length > 1) ||
+        value === true ||
+        value === false
+      ) {
+        return `Giá trị không hợp lệ.`;
+      }
+      value = +value;
+      if (!Number.isNaN(value) && value !== Infinity && value !== Infinity) {
+        total += value;
+      } else {
+        return `Giá trị không hợp lệ.`;
+      }
     }
-    value = +value;
-    if (!Number.isNaN(value) && value !== Infinity && value !== Infinity) {
-      total += value;
-    } else {
-      return `Giá trị không hợp lệ.`;
-    }
+    return total;
   }
-  return total;
-}
-console.log(sum(1, 2, 3, 4, 5, [1], "1", true, ["a"]));
-```
+  console.log(sum(1, 2, 3, 4, 5, [1], "1", true, ["a"]));
+  ```
 
-- [x] Bài 2:
+**[x] Bài 2:**
 
 - **Bài làm rất tốt**
 
-- [x] Bài 3:
+**[x] Bài 3:**
 
 - **Bài làm tốt**
 
 - Hàm `push()` trong `Array` trả về độ dài của mảng mới sau khỉ đã thêm các phần tử. Hiện bài làm đang trả về mảng mới sau khi đã thêm các phần tử.
 
-- [x] Bài 4:
+**[x] Bài 4:**
 
 - **Bài làm rất tốt**
 
-- [x] Bài 5:
+**[x] Bài 5:**
 
 - **Bài làm rất tốt**
 
 - Khi khai báo biến `options`trong hàm `toSelectOption` có thể gán luôn giá trị của nó bằng một chuỗi như `<option value="" hidden>Chọn chuyên mục</option>  <option value="">Chọn chuyên mục</option>` để kết quả hiện thị giống với yêu cầu đề bài
 
-- [x] Đánh giá chung: Bài làm tốt, cần kiểm tra thêm các điều kiện, các trường hợp có thể xảy ra để tránh lỗi và đảm bảo đầu ra chính xác.
+**[x] Đánh giá chung:** Bài làm tốt, cần kiểm tra thêm các điều kiện, các trường hợp có thể xảy ra để tránh lỗi và đảm bảo đầu ra chính xác.
 
 ## [Nguyen Tien Dat](https://github.com/tiendat211294/f8_offline_k5/blob/main/buoi-25/script.js)
 
-- [x] Bài 1:
+**[x] Bài 1:**
 
 - **Bài làm tốt**
 
@@ -120,45 +120,45 @@ console.log(sum(1, 2, 3, 4, 5, [1], "1", true, ["a"]));
 
 - Có thể tham khảo đoạn code sau:
 
-```js
-function sum(...args) {
-  var total = 0;
-  for (value of args) {
-    if (
-      (Array.isArray(value) && value.length > 1) ||
-      value === true ||
-      value === false
-    ) {
-      return `Giá trị không hợp lệ.`;
+  ```js
+  function sum(...args) {
+    var total = 0;
+    for (value of args) {
+      if (
+        (Array.isArray(value) && value.length > 1) ||
+        value === true ||
+        value === false
+      ) {
+        return `Giá trị không hợp lệ.`;
+      }
+      value = +value;
+      if (!Number.isNaN(value) && value !== Infinity && value !== Infinity) {
+        total += value;
+      } else {
+        return `Giá trị không hợp lệ.`;
+      }
     }
-    value = +value;
-    if (!Number.isNaN(value) && value !== Infinity && value !== Infinity) {
-      total += value;
-    } else {
-      return `Giá trị không hợp lệ.`;
-    }
+    return total;
   }
-  return total;
-}
-console.log(sum(1, 2, 3, 4, 5, [1], "1", true, ["a"]));
-```
+  console.log(sum(1, 2, 3, 4, 5, [1], "1", true, ["a"]));
+  ```
 
-- [x] Bài 2:
+**[x] Bài 2:**
 
 - **Bài làm rất tốt**
 
-- [x] Bài 3:
+**[x] Bài 3:**
 
 - **Bài làm tốt**
 
 - Hàm `push()` trong `Array` trả về độ dài của mảng mới sau khỉ đã thêm các phần tử. Hiện bài làm đang trả về mảng mới sau khi đã thêm các phần tử.
 
-- [x] Bài 4:
+**[x] Bài 4:**
 
 - **Bài làm rất tốt**
 
-- [x] Bài 5:
+**[x] Bài 5:**
 
 - **Bài làm rất tốt**
 
-- [x] Đánh giá chung: Bài làm rất tốt, cần kiểm tra thêm các điều kiện, các trường hợp có thể xảy ra để tránh lỗi và đảm bảo đầu ra chính xác.
+**[x] Đánh giá chung:** Bài làm rất tốt, cần kiểm tra thêm các điều kiện, các trường hợp có thể xảy ra để tránh lỗi và đảm bảo đầu ra chính xác.
