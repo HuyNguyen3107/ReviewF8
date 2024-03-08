@@ -22,16 +22,16 @@ Góp ý code:
 
 - Để tiện hơn trong việc sử dụng lặp lại nhiều lần `document.querySelector` và `document.querySelectorAll` có thể sử dụng một function riêng thay vì phải viết lại nhiều lần, ví dụ:
 
-```js
-var $ = function (tag) {
-  return document.querySelector(tag);
-};
-var $$ = function (allTag) {
-  return document.querySelectorAll(allTag);
-};
-```
+  ```js
+  var $ = function (tag) {
+    return document.querySelector(tag);
+  };
+  var $$ = function (allTag) {
+    return document.querySelectorAll(allTag);
+  };
+  ```
 
-Đánh giá chung: **Bài làm chưa tốt**, vẫn còn các case chưa xử lý hoặc xử lý chưa đúng theo bản mẫu ở cả 2 form đăng ký và đăng nhập, cần dành thời gian nhiều hơn làm bài tập về nhà.
+**Đánh giá chung:** **Bài làm chưa tốt**, vẫn còn các case chưa xử lý hoặc xử lý chưa đúng theo bản mẫu ở cả 2 form đăng ký và đăng nhập, cần dành thời gian nhiều hơn làm bài tập về nhà.
 
 ## [Ngo Hoang Kim](https://kzau1612.github.io/FSK5/FSK5/day_26/)
 
@@ -53,18 +53,18 @@ Góp ý code:
 
 - Để tiện hơn trong việc sử dụng lặp lại nhiều lần `document.querySelector` và `document.querySelectorAll` có thể sử dụng một function riêng thay vì phải viết lại nhiều lần, ví dụ:
 
-```js
-var $ = function (tag) {
-  return document.querySelector(tag);
-};
-var $$ = function (allTag) {
-  return document.querySelectorAll(allTag);
-};
-```
+  ```js
+  var $ = function (tag) {
+    return document.querySelector(tag);
+  };
+  var $$ = function (allTag) {
+    return document.querySelectorAll(allTag);
+  };
+  ```
 
 - Một số chức năng ở cả 2 form đều có ví dụ như validate thông tin ở input nhập email và password thì nên tách riêng 1 function để tránh việc lặp code, giúp cho code dễ hiểu, khoa học và hợp lý hơn.
 
-Đánh giá chung: **Bài làm chưa tốt**, vẫn còn các case chưa xử lý hoặc xử lý chưa đúng theo bản mẫu ở cả 2 form đăng ký và đăng nhập, cần tối ưu code ngắn gọn và cần dành thời gian nhiều hơn làm bài tập về nhà.
+**Đánh giá chung:** **Bài làm chưa tốt**, vẫn còn các case chưa xử lý hoặc xử lý chưa đúng theo bản mẫu ở cả 2 form đăng ký và đăng nhập, cần tối ưu code ngắn gọn và cần dành thời gian nhiều hơn làm bài tập về nhà.
 
 ## [Le Tung Duong](https://duong1801.github.io/f8-fullstack-k5/Day-26/)
 
@@ -92,13 +92,13 @@ Góp ý code:
 
 - Để tiện hơn trong việc sử dụng lặp lại nhiều lần `document.querySelector` và `document.querySelectorAll` có thể sử dụng một function riêng thay vì phải viết lại nhiều lần, ví dụ:
 
-```js
-var $ = function (tag) {
-  return document.querySelector(tag);
-};
-var $$ = function (allTag) {
-  return document.querySelectorAll(allTag);
-};
-```
+  ```js
+  var $ = function (tag) {
+    return document.querySelector(tag);
+  };
+  var $$ = function (allTag) {
+    return document.querySelectorAll(allTag);
+  };
+  ```
 
-Đánh giá chung: **Bài làm chưa tốt**, vẫn còn các case chưa xử lý hoặc xử lý chưa đúng theo bản mẫu ở cả 2 form đăng ký và đăng nhập, cần dành thời gian nhiều hơn làm bài tập về nhà và chỉn chu hơn về mặt giao diện.
+**Đánh giá chung:** **Bài làm chưa tốt**, vẫn còn các case chưa xử lý hoặc xử lý chưa đúng theo bản mẫu ở cả 2 form đăng ký và đăng nhập, cần dành thời gian nhiều hơn làm bài tập về nhà và chỉn chu hơn về mặt giao diện.
