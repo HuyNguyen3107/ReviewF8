@@ -1,0 +1,24 @@
+/** @format */
+* {
+  margin: 0;
+  padding: 0;
+}
+.list {
+  background: #4286f4;
+  width: 500px;
+  padding: 1rem;
+}
+
+.list-item.active {
+  background: #ff6f00;
+}
+.list-item {
+  background: #8bb3f4;
+  border: 1px solid #fff;
+  margin: 1px 0;
+  position: relative;
+  padding: 0.5rem;
+}
+.ghost {
+  opacity: 0.4;
+}
