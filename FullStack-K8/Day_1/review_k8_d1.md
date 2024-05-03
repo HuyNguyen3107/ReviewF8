@@ -30,7 +30,7 @@
 
 - Có thể sử dụng các thẻ như `<span>`, `<div>`, ... Các thẻ non-semantics để thể hiện **placeholder**.
 
-- Hoặc chữ **HEADER** có thể sử dụng thẻ `<header>`, **SIDEBAR** có thể sử dụng thẻ `<aside>` và **FOOTER** có thể sử dụng thẻ **<footer>**.
+- Hoặc chữ **HEADER** có thể sử dụng thẻ `<header>`, **SIDEBAR** có thể sử dụng thẻ `<aside>` và **FOOTER** có thể sử dụng thẻ `<footer>`.
 
 - [x] Đánh giá chung bài tập về nhà: **Bài làm tốt**, đa số đều sử dụng và phân tích HTML tốt. Chỉ cần chú ý thêm một chút về ý nghĩa trong trường hợp cụ thể <3.
 
