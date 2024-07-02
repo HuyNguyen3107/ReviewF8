@@ -43,7 +43,7 @@
 
 - [x] **Điểm mạnh**:
 
-  - Trình bày code rất tốt.
+  - Trình bày code rất tốt (rõ ràng, dễ đọc, thụt lề đúng cách, không bị thừa các khoảng trắng).
 
   - Sử dụng tốt các thẻ `html`
 
@@ -112,7 +112,7 @@
 
   - Chưa thực sự hiểu về semantic trong html
 
-  - Trình bày code chưa thực sự tốt
+  - Trình bày code chưa thực sự tốt (Ngắt dòng nội dung và thẻ chưa tốt)
 
   - Quản lý các file ảnh chưa tốt khi toàn bộ các file ảnh đang được đặt ngang cấp với các file `html` trong thư mục **Day-1**, điều này dẫn đến việc khó quản lý khi số lượng ảnh và file `html` tăng lên
 
@@ -137,8 +137,6 @@
   ![alt text](./images/NHD_01.png)
 
 - Các thẻ `input` và `button` thuộc trong nhóm thẻ `form` và đây cũng là một biểu mẫu vậy nên cần được bọc trong thẻ `form`.
-
-- Thẻ `input` là thẻ tự đóng vậy nên cần thêm `/` vào trước `>`
 
 - Giá trị của thuộc tính `type` của thẻ `input` ở ô nhập liệu **email** cần có giá trị là **email**, hiện bài làm đang để giá trị của thuộc tính `type` của thẻ `input` là **text**, ngoài ra cần thêm thuộc tính `name` để trang web có thể lấy được giá trị của input và xử lý ở phía server-side, ví dụ:
 
@@ -268,6 +266,314 @@
   - Chưa thực sự hiểu về semantic trong html
 
 - [x] **Đánh giá chung**: Cần chú ý nhiều hơn đến semantic, có thể sử dụng comment để nhận biết rõ điểm bắt đầu và kết thúc của các thành phần như **header**, **sidebar**, **footer**,... Hiện anh đang để cả phần bài tập về nhà và phần học trên lớp cùng chung trong một folder, nên tách riêng phần bài tập về nhà và phần học ở trên lớp thành 2 repo khác nhau để dễ quản lý hơn trong quá trình học tập.
+
+- [x] **Điểm tổng kết: **
+
+**Note: Anh sửa lại bài làm theo nhận xét rồi sau đó báo lại cho em để em kiểm tra lại nha**.
+
+## [Tran Ngoc Duy](https://tranduyriba.github.io/f8-fullstack/)
+
+- [x] **Bài 1:**
+
+- Ở trường hợp này, **Get the invite** chưa đủ ý nghĩa làm một tiêu đề chính, dựa theo tiêu đề, và chỉ có một `input` nhập **email**, đây có thể là một `form` đăng ký thông báo thường có ở **footer**. Nên sử dụng thẻ `h2` thay vì thẻ `h1`.
+
+- Các thẻ `input` và `button` thuộc trong nhóm thẻ `form` và đây cũng là một biểu mẫu vậy nên cần được bọc trong thẻ `form`.
+
+- Thẻ `br` chỉ được sử dụng để ngắt dòng văn bản không được sử dụng để tạo khoảng cách giữa các thẻ `html`.
+
+- [x] **Bài 2:**
+
+- Tiêu đề của các bài viết nên dùng thẻ `h2` thay vì thẻ `strong`.
+
+- **Lorem ipsum dolor, sit amet consectetur adipisicing elit.** là một đoạn văn bản không mang ý nghĩa, tuy nhiên nó vẫn là một đoạn văn bản và cần được bọc trong thẻ `p`.
+
+- Nhận xét về cách dùng thẻ `br` tương tự như ở bài 1.
+
+- Không được để thừa khoảng trắng.
+
+  ![alt text](./images/TND.png)
+
+- [x] **Bài 3:**
+
+- Thẻ `p` được dùng để bọc một đoạn văn bản. **HEADER**, **SIDEBAR**, **FOOTER** không mang ý nghĩa là một đoạn văn bản, nó chỉ là một **placeholder**, một thành phần giữ chỗ để biết rằng ở đó sẽ chứa một header, sidebar, footer mà đang sửa chữa, thêm, đang hoàn thiện. Vậy nên không sử dụng thẻ `p` để bọc **Header**, **Footer** và **SIDEBAR** và phần ở giữa header và footer nên được bọc bởi thẻ `main`.
+
+- Có thể sử dụng các thẻ như `<span>`, `<div>`, ... Các thẻ non-semantics để thể hiện **placeholder**, hoặc chữ **HEADER** có thể sử dụng thẻ `<header>`, **SIDEBAR** có thể sử dụng thẻ `<aside>` và **FOOTER** có thể sử dụng thẻ `<footer>`.
+
+  - Đề xuất sửa:
+
+  ```html
+  <header>Header</header>
+  <main>
+    ...
+    <aside>SIDEBAR</aside>
+  </main>
+  <footer>FOOTER</footer>
+  ```
+
+- Không được để thừa các khoảng trắng và thụt lề chưa chính xác
+
+  ![alt text](./images/TND_02.png)
+
+- [x] **Điểm mạnh**:
+
+  - Sử dụng tốt các thẻ `html` để tạo được giao diện theo yêu cầu
+
+  - Có tìm hiểu và sử dụng được `CSS` mặc dù kiến thức chưa được học
+
+  - Có sự chủ động tìm hiểu và sử dụng fontawesome
+
+- [x] **Điểm yếu**
+
+  - Chưa thực sự hiểu về semantic trong html
+
+  - Trình bày code chưa thực sự tốt (Thụt lề chưa chính xác, thừa khoảng trắng)
+
+- [x] **Đánh giá chung**: Cần chú ý nhiều hơn đến semantic, có thể sử dụng comment để nhận biết rõ điểm bắt đầu và kết thúc của các thành phần như **header**, **sidebar**, **footer**,... Nên để folder `CSS` trong folder `Day-1` để dễ quản lý hơn và file `style.css` cũng chỉ sử dụng được đối với bài tập của ngày hôm nay.
+
+- [x] **Điểm tổng kết: **
+
+**Note: Anh sửa lại bài làm theo nhận xét rồi sau đó báo lại cho em để em kiểm tra lại nha**.
+
+## [Hoang Thanh Huy](https://huyhtf88188.github.io/f8_fullstack/)
+
+- [x] **Bài 1:**
+
+- Ở trường hợp này, **Get the invite** chưa đủ ý nghĩa làm một tiêu đề chính, dựa theo tiêu đề, và chỉ có một `input` nhập **email**, đây có thể là một `form` đăng ký thông báo thường có ở **footer**. Nên sử dụng thẻ `h2` thay vì thẻ `h1`.
+
+- Trong trường hợp này không nên tách thẻ `button` ra ngoài vì thẻ `button` ở đây đóng vai trò là một nút để người dùng bấm vào và gửi đi yêu cầu và các thẻ `input`, `button` thuộc trong nhóm thẻ `form` và đây cũng là một biểu mẫu vậy nên cần được bọc trong thẻ `form`, ví dụ:
+
+  ```html
+  <form action="" method="">
+    <input type="email" name="email" placeholder="Enter email" />
+    <button>Request Invite</button>
+  </form>
+  ```
+
+- Thẻ `br` chỉ được sử dụng để ngắt dòng văn bản không được sử dụng để tạo khoảng cách giữa các thẻ `html`.
+
+- Giá trị của thuộc tính `type` của thẻ `input` ở ô nhập liệu **email** cần có giá trị là **email**, hiện bài làm đang để giá trị của thuộc tính `type` của thẻ `input` là **text**, thuộc tính `value` được dùng để giúp xác định giá trị mặc định của ô nhập liệu, trong trường hợp này chữ **Enter email** khổng phải là giá trị mặc định của trường nhập **email** mà nó chỉ là gợi ý để mô tả giá trị mong muốn của trường nhập vì vậy nên sử dụng thuộc tính `placeholder` với giá trị là **Enter email**.
+
+- [x] **Bài 2:**
+
+- Trong thẻ `ul` thì chỉ có thẻ `li` là con trực tiếp để thể hiện một danh sách và trong trường hợp này thẻ `ul` thể hiện danh sách các bài viết và thẻ `li` để thể hiện từng bài viết tương ứng vậy nên tất các thẻ **heading** và thẻ `p` trong bài làm cần được đặt vào trong thẻ `li` tương ứng.
+
+- Trong một trang chỉ nên có 1 thẻ `h1` để nhấn mạnh tiêu đề chính của trang đó, hiện bài làm đang sử dụng nhiều hơn 1 thẻ `h1`, các tiêu đề của bài bài viết không mang ý nghĩa là tiêu đề chính của mộ trang vì vậy cần sử dụng thẻ `h2`
+
+  - Đề xuất sửa:
+
+  ```html
+  <li>
+    <i class="fa-solid fa-leaf"></i>
+    <h2>UI/Ux Design</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae beatae
+      vel natus?
+    </p>
+  </li>
+  ```
+
+  (Tương tự với các trường hợp còn lại)
+
+- [x] **Bài 3:**
+
+- Bài làm đang sử dụng thẻ `h1` mà không có nội dung
+
+  ![alt text](./images/HTH_01.png)
+
+- Các thẻ heading được sử dụng để làm tiêu đề, đầu đề cho 1 mục hoặc cả trang. **HEADER**, **SIDEBAR**, **FOOTER** không mang ý nghĩa là một tiêu đề, nó chỉ là một **placeholder**, một thành phần giữ chỗ để biết rằng ở đó sẽ chứa một header, sidebar, footer mà đang sửa chữa, thêm, đang hoàn thiện. Vậy nên không sử dụng thẻ `h2` để bọc **Header**, **Footer** và `h3` để bọc **SIDEBAR** và phần ở giữa header và footer nên được bọc bởi thẻ `main`.
+
+- Có thể sử dụng các thẻ như `<span>`, `<div>`, ... Các thẻ non-semantics để thể hiện **placeholder**, hoặc chữ **HEADER** có thể sử dụng thẻ `<header>`, **SIDEBAR** có thể sử dụng thẻ `<aside>` và **FOOTER** có thể sử dụng thẻ `<footer>`.
+
+  - Đề xuất sửa:
+
+  ```html
+  <header>Header</header>
+  <main>
+    ...
+    <aside>SIDEBAR</aside>
+  </main>
+  <footer>FOOTER</footer>
+  ```
+
+- Tiêu đề: **Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức , cần 300 ngày khắc phục** được thể hiện là một tiêu đề lớn nhất, đáng chú ý nhất, nên sử dụng thẻ `<h1>` ở đây thay vì sử dụng thẻ `h3`.
+
+- Nội dung của các thẻ `span` trong bài làm đều là một đoạn văn bản vậy nên cần đùng thẻ `p` thay vì thẻ `span`.
+
+- Nhận xét về cách dùng thẻ `br` tương tự như ở bài 1.
+
+- Các dấu lớn hơn và nhỏ hơn của các thẻ đóng và thẻ mở cần nằm trên cùng một dòng và không được để thừa các khoảng trắng
+
+  ![alt text](./images/HTH_02.png)
+
+- [x] **Điểm mạnh**:
+
+  - Sử dụng tốt các thẻ `html` để tạo được giao diện theo yêu cầu
+
+  - Có sự chủ động tìm hiểu và sử dụng fontawesome
+
+- [x] **Điểm yếu**
+
+  - Chưa thực sự hiểu về semantic trong html
+
+  - Trình bày code chưa thực sự tốt (Ngắt dòng thẻ chưa hợp lý, thừa khoảng trắng)
+
+- [x] **Đánh giá chung**: Cần chú ý nhiều hơn đến semantic, có thể sử dụng comment để nhận biết rõ điểm bắt đầu và kết thúc của các thành phần như **header**, **sidebar**, **footer**,... Các file bài tập về nhà nên được đặt trong một folder để dễ quản lý hơn trong những bài tập về nhà của các buổi tiếp theo.
+
+- [x] **Điểm tổng kết: **
+
+**Note: Anh sửa lại bài làm theo nhận xét rồi sau đó báo lại cho em để em kiểm tra lại nha**.
+
+## [Nguyen Truong Giang](https://nguyentruonggiang212001.github.io/f8-fullstack-k10/Assignment1/index.html)
+
+- [x] **Bài 1:**
+
+- Giá trị của thuộc tính `type` của thẻ `input` ở ô nhập liệu **email** cần có giá trị là **email**, hiện bài làm đang để giá trị của thuộc tính `type` của thẻ `input` là **text**, tương tự với **name** và **id**.
+
+- [x] **Bài 2:**
+
+- Tiêu đề của các bài viết nên dùng thẻ `h2` thay vì `h3` để tăng thêm độ nhấn mạnh cho tiêu đề của các bài viết.
+
+- [x] **Bài 3:**
+
+- Các thẻ heading được sử dụng để làm tiêu đề, đầu đề cho 1 mục hoặc cả trang. **HEADER**, **SIDEBAR**, **FOOTER** không mang ý nghĩa là một tiêu đề, nó chỉ là một **placeholder**, một thành phần giữ chỗ để biết rằng ở đó sẽ chứa một header, sidebar, footer mà đang sửa chữa, thêm, đang hoàn thiện. Vậy nên không sử dụng thẻ `h2` để bọc **Header**, **Footer** và `h3` để bọc **SIDEBAR** và phần ở giữa header và footer nên được bọc bởi thẻ `main`.
+
+- Có thể sử dụng các thẻ như `<span>`, `<div>`, ... Các thẻ non-semantics để thể hiện **placeholder**, hoặc chữ **HEADER** có thể sử dụng thẻ `<header>`, **SIDEBAR** có thể sử dụng thẻ `<aside>` và **FOOTER** có thể sử dụng thẻ `<footer>`.
+
+  - Đề xuất sửa:
+
+  ```html
+  <header>Header</header>
+  <main>
+    ...
+    <aside>SIDEBAR</aside>
+  </main>
+  <footer>FOOTER</footer>
+  ```
+
+- Các dấu lớn hơn và nhỏ hơn của các thẻ đóng và thẻ mở cần nằm trên cùng một dòng và không được để thừa các khoảng trắng
+
+  ![alt text](./images/NTG_01.png)
+  (Tương tự với các trường hợp ở dưới)
+
+- Tiêu đề: **Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức , cần 300 ngày khắc phục** được thể hiện là một tiêu đề lớn nhất, đáng chú ý nhất, nên sử dụng thẻ `<h1>` ở đây thay vì sử dụng thẻ `h3`.
+
+- Các phần chữ màu xanh, có gạch chân trong đề bài là các liên kết dẫn đến trang thông tin chi tiết vậy nên cần sử dụng thẻ `a`.
+
+- [x] **Điểm mạnh**:
+
+  - Có tìm hiểu và sử dụng được `CSS` mặc dù kiến thức chưa được học
+
+  - Sử dụng tốt các thẻ `html` để tạo được giao diện theo yêu cầu
+
+  - Có sự chủ động tìm hiểu và sử dụng fontawesome
+
+- [x] **Điểm yếu**
+
+  - Chưa thực sự hiểu về semantic trong html
+
+  - Trình bày code chưa thực sự tốt (Ngắt dòng thẻ chưa hợp lý, thừa khoảng trắng)
+
+- [x] **Đánh giá chung**: Cần chú ý nhiều hơn đến semantic, có thể sử dụng comment để nhận biết rõ điểm bắt đầu và kết thúc của các thành phần như **header**, **sidebar**, **footer**,... Các file bài tập về nhà có thể thể quản lý bằng các chia mỗi bài tập thành một thư mục và chứ file `html` và `css` của bài tập đó hoặc đặt các file `html` và `css` trong các thư mục khác nhau để dễ quản lý
+
+- [x] **Điểm tổng kết: **
+
+**Note: Anh sửa lại bài làm theo nhận xét rồi sau đó báo lại cho em để em kiểm tra lại nha**.
+
+## [Le Huu Trong](https://kaiosuke.github.io/Excercise1-2-3/)
+
+- [x] **Bài 1:**
+
+- Giá trị của thuộc tính `type` của thẻ `input` ở ô nhập liệu **email** cần có giá trị là **email**, hiện bài làm đang để giá trị của thuộc tính `type` của thẻ `input` là **text**, ngoài ra cần thêm thuộc tính `name` để trang web có thể lấy được giá trị của input và xử lý ở phía server-side.
+
+- [x] **Bài 2:**
+
+**Điểm: 10**
+
+- [x] **Bài 3:**
+
+- Các thẻ heading được sử dụng để làm tiêu đề, đầu đề cho 1 mục hoặc cả trang. **HEADER**, **SIDEBAR**, **FOOTER** không mang ý nghĩa là một tiêu đề, nó chỉ là một **placeholder**, một thành phần giữ chỗ để biết rằng ở đó sẽ chứa một header, sidebar, footer mà đang sửa chữa, thêm, đang hoàn thiện. Vậy nên không sử dụng thẻ `h2` để bọc **Header**, **Footer** và `h3` để bọc **SIDEBAR**.
+
+- Đề xuất sửa:
+
+```html
+<header>Header</header>
+<main>
+  ...
+  <aside>SIDEBAR</aside>
+</main>
+<footer>FOOTER</footer>
+```
+
+- Tiêu đề: **Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức , cần 300 ngày khắc phục** được thể hiện là một tiêu đề lớn nhất, đáng chú ý nhất, nên sử dụng thẻ `<h1>` ở đây thay vì sử dụng thẻ `h3` và không được sử dụng thẻ `inline` (thẻ `a`) để bọc một thẻ `block` (`h3`).
+
+- Các dấu lớn hơn và nhỏ hơn của các thẻ đóng và thẻ mở cần nằm trên cùng một dòng.
+
+  ![alt text](./images/LHT.png)
+
+- [x] **Điểm mạnh**:
+
+  - Có tìm hiểu và sử dụng được `CSS` mặc dù kiến thức chưa được học
+
+  - Sử dụng tốt các thẻ `html` để tạo được giao diện theo yêu cầu
+
+  - Có sự chủ động tìm hiểu và sử dụng fontawesome
+
+- [x] **Điểm yếu**
+
+  - Chưa thực sự hiểu về semantic trong html
+
+  - Trình bày code chưa thực sự tốt (Ngắt dòng thẻ chưa hợp lý)
+
+- [x] **Đánh giá chung**: Cần chú ý nhiều hơn đến semantic, có thể sử dụng comment để nhận biết rõ điểm bắt đầu và kết thúc của các thành phần như **header**, **sidebar**, **footer**,... Bài làm đang có nhiều hơn một thẻ có cùng `class` là **container** điều này có thể sẽ dẫn đến xung đột `selector` khi `css`.
+
+- [x] **Điểm tổng kết: **
+
+**Note: Anh sửa lại bài làm theo nhận xét rồi sau đó báo lại cho em để em kiểm tra lại nha**.
+
+## [Vu Quoc Dung](https://dungvuquoc0102.github.io/f8_fullstack_k10_repo/)
+
+- [x] **Bài 1:**
+
+- Thẻ `article`: được sử dụng cho các phần có ý nghĩa riêng biệt và có thể độc lập với những phần còn lại của - website (Bài viết, sản phẩm, bình luận,…), tuy nhiên đề bài đang thể hiện là một `form` đăng ký thông báo thường có ở **footer** vậy nên không sử dụng thẻ `article` để bọc toàn bộ bài làm.
+
+- Ở trường hợp này, **Get the invite** chưa đủ ý nghĩa làm một tiêu đề chính, dựa theo tiêu đề, và chỉ có một `input` nhập **email**, đây có thể là một `form` đăng ký thông báo thường có ở **footer**. Nên sử dụng thẻ `h2` thay vì thẻ `h1`.
+
+- Các thẻ `input` và `button` thuộc trong nhóm thẻ `form` và đây cũng là một biểu mẫu vậy nên cần được bọc trong thẻ `form`.
+
+- Giá trị của thuộc tính `type` của thẻ `input` ở ô nhập liệu **email** cần có giá trị là **email**, hiện bài làm đang để giá trị của thuộc tính `type` của thẻ `input` là **text**, ngoài ra cần thêm thuộc tính `name` để trang web có thể lấy được giá trị của input và xử lý ở phía server-side.
+
+- [x] **Bài 2:**
+
+- Thừa quá nhiều khoảng trắng và thụt lề hơi sâu
+
+  ![alt text](./images/VQD_01.png)
+
+- Tiêu đề của các bài viết nên dùng thẻ `h2` thay vì thẻ `strong`
+
+- [x] **Bài 3:**
+
+- Bài làm đang thừa quá nhiều khoảng trắng do thụt lề quá sâu và ngắt dòng văn bản, các thẻ chưa hợp lý.
+
+  ![alt text](./images/VQD_02.png)
+  (Tương tự với các trường hợp còn lại trong bài)
+
+- Phần sidebar được sử dụng để chứa những thông tin bên cạnh nội dung chính và nên sử dụng thể `aside` để bọc **SIDEBAR**
+
+- [x] **Điểm mạnh**:
+
+  - Có tìm hiểu và sử dụng được `CSS` mặc dù kiến thức chưa được học
+
+  - Sử dụng tốt các thẻ `html` để tạo được giao diện theo yêu cầu
+
+  - Có sự chủ động tìm hiểu và sử dụng fontawesome
+
+- [x] **Điểm yếu**
+
+  - Chưa thực sự hiểu về semantic trong html
+
+  - Trình bày code chưa thực sự tốt (Ngắt dòng thẻ, văn bản chưa hợp lý, thụt lề quá sâu)
+
+- [x] **Đánh giá chung**: Cần chú ý nhiều hơn đến semantic, có thể sử dụng comment để nhận biết rõ điểm bắt đầu và kết thúc của các thành phần như **header**, **sidebar**, **footer**,...
 
 - [x] **Điểm tổng kết: **
 
