@@ -37,7 +37,7 @@
 
   - Các thể `heading` như `h2, h1,..` được dùng để thể hiện một tiêu đề của một trang, một bài viết,.. Hiện tại nội dung của các thẻ `h1, h2` trong bài làm không mang ý nghĩa là một tiêu đề vậy nên không sử dụng các thẻ `heading`.
 
-- [x] Đánh giá chung: Bài làm xử lý tốt phần đăng nhập tuy nhiên chưa thực hiện được chức năng gửi **email** đến **email** mà người dùng nhập và cần chú ý hơn đến `semantic` khi code giao diện.
+- [x] Đánh giá chung: Bài làm xử lý tốt phần đăng nhập tuy nhiên chưa thực hiện được chức năng gửi **email** đến **email** mà người dùng nhập và cần chú ý hơn đến semantic khi code giao diện.
 
 ## [Mai Viet Hoang](https://day48-two.vercel.app/)
 
@@ -63,4 +63,4 @@
 
   - Các thể `heading` như `h2, h1,..` được dùng để thể hiện một tiêu đề của một trang, một bài viết,.. Hiện tại nội dung của các thẻ `h1, h2` trong bài làm không mang ý nghĩa là một tiêu đề vậy nên không sử dụng các thẻ `heading`.
 
-- [x] Đánh giá chung: Bài làm xử lý tốt phần đăng nhập tuy nhiên chưa xử lý tốt phần **logout** và chưa thực hiện được chức năng gửi **email** đến **email** mà người dùng nhập và cần chú ý hơn đến `semantic` khi code giao diện.
+- [x] Đánh giá chung: Bài làm xử lý tốt phần đăng nhập tuy nhiên chưa xử lý tốt phần **logout** và chưa thực hiện được chức năng gửi **email** đến **email** mà người dùng nhập và cần chú ý hơn đến semantic khi code giao diện.
