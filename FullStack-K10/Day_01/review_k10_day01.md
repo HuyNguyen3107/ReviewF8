@@ -660,3 +660,69 @@ Bài 3:
 Điểm tổng kết: 26.5
 
 Note: Anh sửa lại bài làm theo nhận xét rồi sau đó báo lại cho em để em kiểm tra lại nha.
+
+## [Nguyen Huy Hoang](https://github.com/nguyenhoang2404/f8-fullstack-k10/blob/main/BaiTapVeNha1/bai1.html)
+
+Bài 1:
+
+Điểm: 7
+
+- Bài làm chưa có icon bức thư giống như bài mẫu. (Có thể tìm hiểu về thẻ img hoặc thư viện Font Awesome để tạo ra được icon bức thư).
+
+- Ở trường hợp này, Get the invite chưa đủ ý nghĩa làm một tiêu đề chính, dựa theo tiêu đề, và chỉ có một input nhập email, đây có thể là một form đăng ký thông báo thường có ở footer. Nên sử dụng thẻ h2 thay vì thẻ h1.
+
+- Các thẻ input thuộc trong nhóm thẻ form và đây cũng là một biểu mẫu vậy nên cần được bọc trong thẻ form.
+
+- Có thể dùng thể div để bọc ngoài thẻ input có type là email để nó nằm trên 1 hàng khác với thẻ input có type là button.
+
+- Thẻ input có type là email nên có thuộc tính name để trang web có thể lấy được giá trị của input và xử lý ở phía server-side.
+
+- Thụt lề hơi sâu
+
+  ![alt text](./images/NHH_01.png)
+
+Bài 2:
+
+Điểm: 10
+
+Bài 3:
+
+Điểm: 7.5
+
+- Các thẻ heading được sử dụng để làm tiêu đề, đầu đề cho 1 mục hoặc cả trang. HEADER, SIDEBAR, FOOTER không mang ý nghĩa là một tiêu đề, nó chỉ là một placeholder, một thành phần giữ chỗ để biết rằng ở đó sẽ chứa một header, sidebar, footer mà đang sửa chữa, thêm, đang hoàn thiện. Vậy nên không sử dụng thẻ h1 để bọc Header, Footer và h3 để bọc SIDEBAR và phần ở giữa header và footer nên được bọc bởi thẻ main.
+
+- Có thể sử dụng các thẻ như <span>, <div>, ... Các thẻ non-semantics để thể hiện placeholder, hoặc chữ HEADER có thể sử dụng thẻ <header>, SIDEBAR có thể sử dụng thẻ <aside> và FOOTER có thể sử dụng thẻ <footer>.
+
+  - Đề xuất sửa:
+
+  html
+  <header>Header</header>
+  <main>
+    ...
+    <aside>SIDEBAR</aside>
+  </main>
+  <footer>FOOTER</footer>
+
+- Trong một trang chỉ nên có 1 thẻ h1 để nhấn mạnh tiêu đề chính của trang đó, hiện bài làm đang sử dụng nhiều hơn 1 thẻ h1.
+
+-Không để thừa các khoảng cách
+
+![alt text](./images/NHH_02.png)
+
+Điểm mạnh:
+
+- Sử dụng tốt các thẻ html để tạo được giao diện theo yêu cầu
+
+- Có sự chủ động tìm hiểu và sử dụng Fontawesome
+
+Điểm yếu
+
+- Chưa thực sự hiểu về semantic trong html
+
+- Trình bày code chưa thực sự tốt (Thụt lề hơi sâu và để thừa các khoảng cách)
+
+Đánh giá chung: Cần chú ý nhiều hơn đến semantic, có thể sử dụng comment để nhận biết rõ điểm bắt đầu và kết thúc của các thành phần như header, sidebar, footer,...
+
+Điểm tổng kết: 8.2
+
+Note: Anh sửa lại bài làm theo nhận xét rồi sau đó báo lại cho em để em kiểm tra lại nha.
