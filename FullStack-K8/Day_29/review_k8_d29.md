@@ -52,4 +52,50 @@
 
 - Các nút action khi click không còn tác dụng, nên thêm 1 trạng thái disabled cho nó để user dễ nhận biết hơn.
 
--
+- Hiện bài làm đang không thực hiện được tính năng vuốt chuyển slide do khi lắng nghe sự kiện `mousedown` từ phía người dùng chưa thực hiện việc ngăn chặn hành vi mặc định (kéo thả hình ảnh) khi người dùng nhấn và giữ chuột trên một thẻ `img` .
+
+  Đề xuất sửa:
+
+  ```js
+  carousel.addEventListener("mousedown", function (e) {
+    e.preventDefault();
+    ...
+  });
+  ```
+
+- [x] Đánh giá chung: Bài làm rất tốt phần chức năng chuyển slide thông qua việc click vào các dot hoặc bấm vào các nút pre hay next, tuy nhiên chưa thực hiện tốt chuyển bằng việc vuốt slide.
+
+## [Lam Hoang](https://nvhlam2211.github.io/BTVN-F8/Day-29/ex.html)
+
+- Các nút action khi click không còn tác dụng, nên thêm 1 trạng thái disabled cho nó để user dễ nhận biết hơn.
+
+- Không để thừa các khoảng cách như dưới đây
+
+  ![alt text](./images/LH_01.png)
+  (Tương tự các trường hợp bên dưới)
+
+- Nên viết riêng một hàm dùng để kiểm tra xem `dot` nào đang được active rồi sau đó highlight lên và xóa bỏ highlight của `dot` được active trước đó thay vì gọi hàm `renderDots`(dùng để tạo `dot`, render lên trình duyệt và gán sự kiện cho các `dot`) quá nhiều.
+
+- Các biến `position` và `index` đang được gán giá trị khi khai báo vậy nên cần phải đưa việc khai báo và gán giá trị 2 biến này lên trước đoạn mã có sử dụng 2 biến đó vì cơ chế `hoisting`(là cơ chế mặc định của `JavaScript`) sẽ di chuyển tất cả các biến và hàm (Function declaration) khi khai báo lên đầu scope trước khi chúng được thực thi, tuy nhiên đối với cơ chế này nó chỉ di chuyển khai báo, còn việc gán giá trị thì giữ nguyên và giá trị của các biến được di chuyển lên sẽ là `undefined` điều đó có thể dẫn đến những lỗi không mong muốn.
+
+- Đánh giá chung: **Bài làm tốt**, cần chú ý một số lỗi nêu trên để hoàn thiện hơn.
+
+## [Nhung Le](https://nhunglt1801.github.io/f8-fullstack-k8-exercise/day-29/index.html)
+
+- Các nút action khi click không còn tác dụng, nên thêm 1 trạng thái disabled cho nó để user dễ nhận biết hơn.
+
+- Nên tạo khoảng cách tại những vị trí sau để bài làm được đồng nhất về cách trình bày
+
+  ![alt text](./images/NL_01.png)
+
+- Bài làm chưa thực hiện chức năng vuốt chuyển slide
+
+- [x] Đánh giá chung: Bài làm rất tốt phần chức năng chuyển slide thông qua việc click vào các dot hoặc bấm vào các nút pre hay next, tuy nhiên chưa thực hiện chuyển bằng việc vuốt slide.
+
+## [Vu Tri Tung](https://tungv62333.github.io/f8-offline-k8/Javascript/Lesson-29/ex01.html)
+
+- Khi slide cuối cùng được hiển thị và sau đó người dùng tiếp tục bấm vào nút next slide thì quay lại slide đầu tiên và ngược lại điều này là sai với yêu cầu đề bài.
+
+- Bài làm chưa thực hiện chức năng vuốt chuyển slide
+
+- [x] Đánh giá chung: Bài làm rất tốt phần chức năng chuyển slide thông qua việc click vào các dot hoặc bấm vào các nút pre hay next, tuy nhiên cần thực hiện đúng yêu cầu đề bài và. Chưa thực hiện chuyển bằng việc vuốt slide.
