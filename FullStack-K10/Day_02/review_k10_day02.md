@@ -32,9 +32,7 @@
 
 - [x] **Điểm yếu:**
 
-- Đặt tên các file ảnh chưa hợp lý, hiện bài làm đang để tên các file ảnh là số hoặc kích thước của ảnh điều này có thể dẫn đến việc quản lý các file ảnh trở nên khó khăn khi số lượng file ảnh tăng lên.
-
-Đánh giá chung: Bài làm rất tốt, tuy nhiên cần chú ý cách đặt tên các file ảnh và nên tách phần bài tập về nhà và phần học trên lớp ra thành các repo khác nhau để dễ quản lý khi số lượng bài tập về nhà tăng lên.
+Đánh giá chung: Bài làm rất tốt, tuy nhiên cần chú ý nên tách phần bài tập về nhà và phần học trên lớp ra thành các repo khác nhau để dễ quản lý khi số lượng bài tập về nhà tăng lên.
 
 `Điểm tổng kết: 10`
 
@@ -253,3 +251,276 @@ Ví dụ: `color: yellow; padding-left: 40px; background-color: blue;`
 `Điểm tổng kết: 9`
 
 `Note: Bạn sửa lại bài làm theo nhận xét rồi sau đó báo lại cho mình để mình kiểm tra lại nha.`
+
+## [Vu Quoc Dung](https://dungvuquoc0102.github.io/f8_fullstack_k10_repo/)
+
+- [x] **Bài 1:**
+
+`Điểm: 9.5`
+
+- **Posted by BGB, November, 2012** không phải là một đoạn văn bản mà nó chỉ thể hiện thời gian và người post bài vì vậy nên dùng thẻ `div` hoặc thẻ `span` thay vì thẻ `p` để bọc.
+
+- [x] **Bài 2:**
+
+`Điểm: 9`
+
+- Thẻ `h1` được dùng để thể hiện tiêu đề chính của một trang vậy nên không nên `css` cho thẻ `h1` giống như là một khối có màu nền và có dòng chữ ở giữa điều đó dẫn đến việc toàn bộ khối đó được hiểu là một tiêu đề của cả trang, có thể học một thẻ `div` ra bên ngoài thẻ `h1` rồi sau đó `css` cho thẻ `div` đó có phần **background** giống theo yêu cầu đề bài.
+
+- **strong text** là hai từ được nhấn mạnh vậy nên cần sử dụng thẻ `strong` thay vì thẻ `b`.
+
+- [x] **Bài 3:**
+
+`Điểm: 9.75`
+
+- Tiêu đề của các bài viết nên dùng thẻ `h2` thay vì `h3` để tăng thêm độ nhấn mạnh cho tiêu đề của các bài viết.
+
+- [x] **Bài 4:**
+
+`Điểm: 9.75`
+
+- Thẻ `ul` nằm dưới thẻ `h2` có nội dung là **Quick Links** là một danh sách chứa các liên kết chuyển hướng vậy nên cần bọc thẻ `nav` ra ngoài thẻ `ul`.
+
+- [x] **Điểm mạnh:**
+
+- Sử dụng tốt các thẻ html để tạo được giao diện theo yêu cầu
+
+- Bài làm tương đối tốt về semantic semantic(có sự cả thiện rất tốt so với bài tập buổi 1)
+
+- Chủ động tìm hiểu và sử dụng tốt `CSS`, `Fontawesome` và thẻ `HTML` chưa được học trên lớp.
+
+Đánh giá chung: Bài làm rất tốt.
+
+`Điểm tổng kết: 9.5`
+
+`Note: Anh sửa lại bài làm theo nhận xét rồi sau đó báo lại cho em để em kiểm tra lại nha.`
+
+## [Tran Ngoc Duy](https://tranduyriba.github.io/bai-tap-f8/)
+
+- [x] Bài 1:
+
+`Điểm: 7`
+
+- **Posted by BGB, November, 2012** không phải là một đoạn văn bản mà nó chỉ thể hiện thời gian và người post bài vì vậy nên dùng thẻ `div` hoặc thẻ `span` thay vì thẻ `p` để bọc, tương tự với **blackgoose@example.com** và **555-336** nên được bọc trong thẻ `address` vì phần này thể hiện thông tin liên hệ của người đăng bài.
+
+- Toàn bộ nội dung của bài này là nội dung của 1 bài blog vì vậy cần dùng thẻ `article` bọc toàn bộ nội dung.
+
+- Ở nội dung của thẻ `p` thứ 2 trong bài làm, dùng thẻ `em` để bọc **extremely** vì ở đây chủ của bài blog đang muốn nhấn mạnh rằng người đó cực kỳ thích thú với kỹ thuật nấu ăn gọi là **sous vide**. Các từ **sous vide** cần được bọc trong thẻ `i`(dùng để xác định một đoạn văn bản được định dạng kiểu chữ in nghiêng).
+
+- Có thể để `Cooking fir Geeks`trong thẻ `cite` vì đây là tên của một cuốn sách mà thẻ `cite` được dùng để xác định tiêu đề của một tác phẩm sáng tạo (ví dụ: một cuốn sách, một bài thơ, một bài hát, một bộ phim, một bức tranh, một tác phẩm điêu khắc, v.v.).
+
+- Dùng thẻ `strong` để bọc **Sous Vide Salmon with Dill Hollandaise** để nhấn mạnh rằng trong tháng tới thì họ sẽ phục vụ món **Sous Vide Salmon with Dill Hollandaise** tại nhà hàng của họ.
+
+- **Warning: Sous vide cooked salmon is not pasteurized. Avoid it if you are pregnant or h** là một đoạn văn bản có cỡ chữ nhỏ nên cần dùng thẻ `small` (xác định văn bản nhỏ hơn như bản quyền và các nhận xét phụ khác) để bọc hoặc có thể dùng `css` để chỉnh lại cỡ chữ.
+
+- [x] Bài 2:
+
+`Điểm: 8`
+
+- **strong text** là hai từ được nhấn mạnh vậy nên cần sử dụng thẻ `strong` để bọc.
+
+- Thẻ `h1` được dùng để thể hiện tiêu đề chính của một trang vậy nên không nên `css` cho thẻ `h1` giống như là một khối có màu nền và có dòng chữ ở giữa điều đó dẫn đến việc toàn bộ khối đó được hiểu là một tiêu đề của cả trang, có thể học một thẻ `div` ra bên ngoài thẻ `h1` rồi sau đó `css` cho thẻ `div` đó có phần **background** giống theo yêu cầu đề bài.
+
+- Trong thẻ `ul` chỉ nên có thẻ con trực tiếp là thẻ thẻ `li` và theo đề bài thì tiêu đề, nội dung và hình ảnh(các thẻ `h1`, `p`, `img` trong bài làm) không nằm trong danh sách vậy nên không đặt trong thẻ `ul`.
+
+- [x] Bài 3:
+
+`Điểm: 10`
+
+- [x] Bài 4:
+
+`Điểm: 9`
+
+- Toàn bộ nội dung của bài này đề thuộc phần **FOOTER** của một trang (chân trang, nằm tại vị trí cuối cùng của website) vậy nên cần bọc toàn bộ phần này trong thẻ `footer`.
+
+- Thẻ `ul` nằm dưới thẻ `h2` có nội dung là **Quick Links** là một danh sách chứa các liên kết chuyển hướng vậy nên cần bọc thẻ `nav` ra ngoài thẻ `ul`.
+
+- [x] **Điểm mạnh:**
+
+- Sử dụng tốt các thẻ `html` để tạo được giao diện theo yêu cầu
+
+- Chủ động tìm hiểu và sử dụng tốt `CSS`, `Fontawesome`
+
+- Trình bày code rất tốt(rõ ràng, dễ đọc, thụt lề đúng cách, không bị thừa các khoảng trắng).
+
+- [x] **Điểm yếu:**
+
+- Chưa thực sự hiểu về `semantic` trong `html`
+
+- Chưa cẩn thận trong việc kiểm tra kỹ giao diện mẫu trước khi code
+
+Đánh giá chung: Cần chú ý nhiều hơn đến `semantic` và cẩn thận hơn trong việc kiểm tra giao diện mẫu.
+
+`Điểm tổng kết: 8.5`
+
+`Note: Anh sửa lại bài làm theo nhận xét rồi sau đó báo lại cho em để em kiểm tra lại nha.`
+
+## [Nguyen Hai Duong](https://tenk22.github.io/F8_fullstacks/)
+
+- [x] Bài 1:
+
+`Điểm: 7`
+
+- **Posted by BGB, November, 2012** không phải là một đoạn văn bản mà nó chỉ thể hiện thời gian và người post bài vì vậy nên dùng thẻ `div` hoặc thẻ `span` thay vì thẻ `p` để bọc, tương tự với **blackgoose@example.com** và **555-336** nên được bọc trong thẻ `address` vì phần này thể hiện thông tin liên hệ của người đăng bài.
+
+- Nên dùng thẻ `em` để bọc **extremely** thay vì sử dụng thẻ `i` vì ở đây chủ của bài blog đang muốn nhấn mạnh rằng người đó cực kỳ thích thú với kỹ thuật nấu ăn gọi là **sous vide**.
+
+- Nên dùng thẻ `strong` để bọc **Sous Vide Salmon with Dill Hollandaise** thay vì thẻ `b` để nhấn mạnh rằng trong tháng tới thì họ sẽ phục vụ món **Sous Vide Salmon with Dill Hollandaise** tại nhà hàng của họ.
+
+- Có thể để `Cooking fir Geeks`trong thẻ `cite` vì đây là tên của một cuốn sách mà thẻ `cite` được dùng để xác định tiêu đề của một tác phẩm sáng tạo (ví dụ: một cuốn sách, một bài thơ, một bài hát, một bộ phim, một bức tranh, một tác phẩm điêu khắc, v.v.).
+
+- **Warning: Sous vide cooked salmon is not pasteurized. Avoid it if you are pregnant or h** là một đoạn văn bản có cỡ chữ nhỏ nên cần dùng thẻ `small` (xác định văn bản nhỏ hơn như bản quyền và các nhận xét phụ khác) để bọc hoặc có thể dùng `css` để chỉnh lại cỡ chữ.
+
+- Bài làm thừa một thẻ đóng `p`
+
+  ![alt text](./images/NHD_01.png)
+
+- [x] Bài 2:
+
+`Điểm: 9.5`
+
+- Thẻ `h1` được dùng để thể hiện tiêu đề chính của một trang vậy nên không nên `css` cho thẻ `h1` giống như là một khối có màu nền và có dòng chữ ở giữa điều đó dẫn đến việc toàn bộ khối đó được hiểu là một tiêu đề của cả trang, có thể học một thẻ `div` ra bên ngoài thẻ `h1` rồi sau đó `css` cho thẻ `div` đó có phần **background** giống theo yêu cầu đề bài.
+
+- [x] Bài 3:
+
+`Điểm: 8`
+
+- Trong thẻ `ul` thì chỉ nên có thẻ `li` là con trực tiếp vậy nên tất các thẻ `h2` và thẻ `p` trong bài làm cần được đặt vào trong các thẻ `li` tương ứng.
+
+- [x] Bài 4:
+
+`Điểm: 8`
+
+- Toàn bộ nội dung của bài này đề thuộc phần **FOOTER** của một trang (chân trang, nằm tại vị trí cuối cùng của website) vậy nên cần bọc toàn bộ phần này trong thẻ `footer`.
+
+- Thẻ `ul` nằm dưới thẻ `h3` có nội dung là **Quick Links** là một danh sách chứa các liên kết chuyển hướng vậy nên cần bọc thẻ `nav` ra ngoài thẻ `ul`.
+
+- Dấu lớn hơn và nhỏ hơn khi viết thẻ đóng và thẻ mở cần phải nằm trên cùng một dòng
+
+  ![alt text](./images/NHD_02.png)
+
+- [x] **Điểm mạnh:**
+
+- Sử dụng tốt các thẻ `html` để tạo giao diện
+
+- Chủ động tìm hiểu và sử dụng tốt `CSS`, `Fontawesome`
+
+- [x] **Điểm yếu:**
+
+- Chưa thực sự hiểu về `semantic` trong `html`
+
+- Trình bày code chưa thực sự tốt
+
+- [x] **Đánh giá chung:** Cần chú ý hơn đến `semantic` và nên tách phần bài tập về nhà và phần học trên lớp ra thành các repo khác nhau để dễ quản lý khi số lượng bài tập về nhà tăng lên.
+
+`Điểm tổng kết: 8.13`
+
+`Note: Anh sửa lại bài làm theo nhận xét rồi sau đó báo lại cho em để em kiểm tra lại nha.`
+
+## [Le Huu Trong](https://kaiosuke.github.io/exercise2/)
+
+- [x] Bài 1:
+
+`Điểm: 8`
+
+- **Posted by BGB, November, 2012** không phải là một đoạn văn bản mà nó chỉ thể hiện thời gian và người post bài vì vậy nên dùng thẻ `div` hoặc thẻ `span` thay vì thẻ `p` để bọc.
+
+- Toàn bộ nội dung của bài này là nội dung của 1 bài blog vì vậy nên dùng thẻ `article` bọc toàn bộ nội dung.
+
+- Nên dùng thẻ `em` để bọc **extremely** thay vì sử dụng thẻ `i` vì ở đây chủ của bài blog đang muốn nhấn mạnh rằng người đó cực kỳ thích thú với kỹ thuật nấu ăn gọi là **sous vide**.
+
+- Có thể để `Cooking fir Geeks`trong thẻ `cite` vì đây là tên của một cuốn sách mà thẻ `cite` được dùng để xác định tiêu đề của một tác phẩm sáng tạo (ví dụ: một cuốn sách, một bài thơ, một bài hát, một bộ phim, một bức tranh, một tác phẩm điêu khắc, v.v.).
+
+- **Warning: Sous vide cooked salmon is not pasteurized. Avoid it if you are pregnant or h** là một đoạn văn bản có cỡ chữ nhỏ nên cần dùng thẻ `small` (xác định văn bản nhỏ hơn như bản quyền và các nhận xét phụ khác) để bọc hoặc có thể dùng `css` để chỉnh lại cỡ chữ.
+
+- [x] Bài 2:
+
+`Điểm: 9`
+
+- **strong text** là hai từ được nhấn mạnh vậy nên cần sử dụng thẻ `strong` để bọc.
+
+- Thẻ `h1` được dùng để thể hiện tiêu đề chính của một trang vậy nên không nên `css` cho thẻ `h1` giống như là một khối có màu nền và có dòng chữ ở giữa điều đó dẫn đến việc toàn bộ khối đó được hiểu là một tiêu đề của cả trang, nên `css` cho thẻ `div` bọc ở ngoài `h1` có phần **background** giống theo yêu cầu đề bài.
+
+- [x] Bài 3:
+
+`Điểm: 10`
+
+- [x] Bài 4:
+
+`Điểm: 9.5`
+
+- Thẻ `ul` nằm dưới thẻ `h2` có nội dung là **Quick Links** là một danh sách chứa các liên kết chuyển hướng vậy nên cần bọc thẻ `nav` ra ngoài thẻ `ul`.
+
+- [x] **Điểm mạnh:**
+
+- Sử dụng tốt các thẻ `html` để tạo được giao diện theo yêu cầu
+
+- Chủ động tìm hiểu và sử dụng tốt `CSS`, `Fontawesome`
+
+- Trình bày code rất tốt(rõ ràng, dễ đọc, thụt lề đúng cách, không bị thừa các khoảng trắng).
+
+- [x] **Điểm yếu:**
+
+- Chưa thực sự hiểu về `semantic` trong `html`
+
+Đánh giá chung: Cần chú ý nhiều hơn đến `semantic`.
+
+`Điểm tổng kết: 9.13`
+
+`Note: Anh sửa lại bài làm theo nhận xét rồi sau đó báo lại cho em để em kiểm tra lại nha.`
+
+## [Hoang Thanh Huy](https://huyhtf88188.github.io/f8_fullstack/day2/)
+
+- [x] Bài 1:
+
+`Điểm: 7.5`
+
+- **Posted by BGB, November, 2012** không phải là một đoạn văn bản mà nó chỉ thể hiện thời gian và người post bài vì vậy nên dùng thẻ `div` hoặc thẻ `span` thay vì thẻ `header` để bọc.
+
+- Toàn bộ nội dung của bài này là nội dung của 1 bài blog vì vậy nên dùng thẻ `article` bọc toàn bộ nội dung.
+
+- Nên dùng thẻ `em` để bọc **extremely** thay vì sử dụng thẻ `i` vì ở đây chủ của bài blog đang muốn nhấn mạnh rằng người đó cực kỳ thích thú với kỹ thuật nấu ăn gọi là **sous vide**.
+
+- Có thể để `Cooking fir Geeks`trong thẻ `cite` vì đây là tên của một cuốn sách mà thẻ `cite` được dùng để xác định tiêu đề của một tác phẩm sáng tạo (ví dụ: một cuốn sách, một bài thơ, một bài hát, một bộ phim, một bức tranh, một tác phẩm điêu khắc, v.v.).
+
+- **blackgoose@example.com** và **555-336** không phải là một đoạn văn bản nên không dùng thẻ `p` bọc, nên bọc trong thẻ `address` vì phần này thể hiện thông tin liên hệ của người đăng bài, ví dụ:
+
+  ```html
+  <address>
+    blackgoose@example.com <br />
+    555-336
+  </address>
+  ```
+
+- **Warning: Sous vide cooked salmon is not pasteurized. Avoid it if you are pregnant or h** là một đoạn văn bản có cỡ chữ nhỏ nên cần dùng thẻ `small` (xác định văn bản nhỏ hơn như bản quyền và các nhận xét phụ khác) để bọc hoặc có thể dùng `css` để chỉnh lại cỡ chữ.
+
+- [x] Bài 2:
+
+`Điểm: 10`
+
+- [x] Bài 3:
+
+`Điểm: 10`
+
+- [x] Bài 4:
+
+`Điểm: 10`
+
+- [x] **Điểm mạnh:**
+
+- Sử dụng tốt các thẻ `html` để tạo được giao diện theo yêu cầu
+
+- Chủ động tìm hiểu và sử dụng tốt `CSS`, `Fontawesome`
+
+- Trình bày code rất tốt(rõ ràng, dễ đọc, thụt lề đúng cách, không bị thừa các khoảng trắng).
+
+- [x] **Điểm yếu:**
+
+- Chưa thực sự hiểu về `semantic` trong `html`
+
+- Chưa cẩn thận trong việc kiểm tra kỹ giao diện mẫu trước khi code
+
+Đánh giá chung: Cần chú ý nhiều hơn đến `semantic` và cẩn thận hơn trong việc kiểm tra giao diện mẫu.
+
+`Điểm tổng kết: 9.4`
+
+`Note: Anh sửa lại bài làm theo nhận xét rồi sau đó báo lại cho em để em kiểm tra lại nha.`
