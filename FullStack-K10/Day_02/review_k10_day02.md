@@ -594,7 +594,7 @@ Ví dụ: `color: yellow; padding-left: 40px; background-color: blue;`
 
 - [x] **Điểm yếu:**
 
-- Chưa thực sự hiểu về `semantic` trong `html`
+- Chưa thực sự hiểu về semantic trong html
 
 - Chưa cẩn thận trong việc kiểm tra kỹ giao diện mẫu trước khi code
 
@@ -607,3 +607,61 @@ Ví dụ: `color: yellow; padding-left: 40px; background-color: blue;`
 `Điểm tổng kết: 7.65`
 
 `Note: Anh sửa lại bài làm theo nhận xét rồi sau đó báo lại cho em để em kiểm tra lại nha.`
+
+## [Nguyen Trung Hieu](https://hieuvsgithub.github.io/Nop_bai_tap/)
+
+- [x] Bài 1:
+
+`Điểm: 8.5`
+
+- Thẻ `abbr` đại diện cho từ viết tắt mà **Posted by BGB, November, 2012** không phải từ viết tắt mà nó thể hiện thời gian và người post bài vì vậy nên dùng thẻ `div` hoặc thẻ `span` thay vì thẻ `abbr` để bọc, có thể đặt **BGB** vào thẻ `abbr`.
+
+- Tiêu đề: **Low and Slow**, đáng chú ý nhất, nên sử dụng thẻ `h1` ở đây thay vì sử dụng thẻ `h2`.
+
+- Nên dùng thẻ `em` để bọc **extremely** thay vì sử dụng thẻ `i` vì ở đây chủ của bài blog đang muốn nhấn mạnh rằng người đó cực kỳ thích thú với kỹ thuật nấu ăn gọi là **sous vide**.
+
+- Có thể để `Cooking fir Geeks`trong thẻ `cite` vì đây là tên của một cuốn sách mà thẻ `cite` được dùng để xác định tiêu đề của một tác phẩm sáng tạo (ví dụ: một cuốn sách, một bài thơ, một bài hát, một bộ phim, một bức tranh, một tác phẩm điêu khắc, v.v.).
+
+- Nên dùng thẻ `strong` để bọc **Sous Vide Salmon with Dill Hollandaise** thay vì thẻ `b` để nhấn mạnh rằng trong tháng tới thì họ sẽ phục vụ món **Sous Vide Salmon with Dill Hollandaise** tại nhà hàng của họ.
+
+- **Warning: Sous vide cooked salmon is not pasteurized. Avoid it if you are pregnant or h** là một đoạn văn bản có cỡ chữ nhỏ nên cần dùng thẻ `small` (xác định văn bản nhỏ hơn như bản quyền và các nhận xét phụ khác) để bọc hoặc có thể dùng `css` để chỉnh lại cỡ chữ.
+
+- [x] Bài 2:
+
+`Điểm: 9`
+
+- **strong text** là hai từ được nhấn mạnh vậy nên cần sử dụng thẻ `strong` để bọc.
+
+- `<span class="bold">Qui itaque impedit quas sint</span>`, thẻ này có `class` là `bold` tuy nhiên chưa được `css` để chữ được in đậm, có thể sử dụng `css` với thuộc tính `font-weight: bold;` hoặc sử dụng thẻ `b` để bọc.
+
+- [x] Bài 3:
+
+`Điểm: 8.5`
+
+- Trong thẻ `ul` thì chỉ nên có thẻ `li` là con trực tiếp vậy nên tất các thẻ `h3` và thẻ `p` trong bài làm cần được đặt vào trong các thẻ `li` tương ứng.
+
+- Tiêu đề của các bài viết nên dùng thẻ `h2` thay vì `h3` để tăng thêm độ nhấn mạnh cho tiêu đề của các bài viết.
+
+- [x] Bài 4:
+
+`Điểm: 10`
+
+- [x] **Điểm mạnh:**
+
+- Sử dụng tốt các thẻ `html` để tạo được giao diện theo yêu cầu
+
+- Chủ động tìm hiểu và sử dụng tốt `CSS`, `Fontawesome`
+
+- Trình bày code rất tốt(rõ ràng, dễ đọc, thụt lề đúng cách, không bị thừa các khoảng trắng).
+
+- [x] **Điểm yếu:**
+
+- Chưa thực sự hiểu về `semantic` trong `html`
+
+- Chưa cẩn thận trong việc kiểm tra kỹ giao diện mẫu trước khi code
+
+Đánh giá chung: Cần chú ý nhiều hơn đến `semantic` và cẩn thận hơn trong việc kiểm tra giao diện mẫu.
+
+`Điểm tổng kết: 9`
+
+`Note: Bạn sửa lại bài làm theo nhận xét rồi sau đó báo lại cho mình để mình kiểm tra lại nha.`
