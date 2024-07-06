@@ -524,3 +524,86 @@ Ví dụ: `color: yellow; padding-left: 40px; background-color: blue;`
 `Điểm tổng kết: 9.4`
 
 `Note: Anh sửa lại bài làm theo nhận xét rồi sau đó báo lại cho em để em kiểm tra lại nha.`
+
+## [Nguyen Truong Giang](https://nguyentruonggiang212001.github.io/f8-fullstack-k10/Assignment2/index.html)
+
+- [x] Bài 1:
+
+`Điểm: 6`
+
+- Toàn bộ nội dung của bài này là nội dung của 1 bài blog vì vậy cần dùng thẻ `article` bọc toàn bộ nội dung.
+
+- Nên dùng thẻ `em` để bọc **extremely** thay vì sử dụng thẻ `i` vì ở đây chủ của bài blog đang muốn nhấn mạnh rằng người đó cực kỳ thích thú với kỹ thuật nấu ăn gọi là **sous vide**.
+
+- Nên dùng thẻ `strong` để bọc **Sous Vide Salmon with Dill Hollandaise** thay vì thẻ `b` để nhấn mạnh rằng trong tháng tới thì họ sẽ phục vụ món **Sous Vide Salmon with Dill Hollandaise** tại nhà hàng của họ.
+
+- Có thể để `Cooking fir Geeks`trong thẻ `cite` vì đây là tên của một cuốn sách mà thẻ `cite` được dùng để xác định tiêu đề của một tác phẩm sáng tạo (ví dụ: một cuốn sách, một bài thơ, một bài hát, một bộ phim, một bức tranh, một tác phẩm điêu khắc, v.v.).
+
+- **Warning: Sous vide cooked salmon is not pasteurized. Avoid it if you are pregnant or h** là một đoạn văn bản có cỡ chữ nhỏ nên cần dùng thẻ `small` (xác định văn bản nhỏ hơn như bản quyền và các nhận xét phụ khác) để bọc hoặc có thể dùng `css` để chỉnh lại cỡ chữ.
+
+- **blackgoose@example.com** và **555-336** không phải là một đoạn văn bản nên không dùng thẻ `p` bọc, nên bọc trong thẻ `address` vì phần này thể hiện thông tin liên hệ của người đăng bài, ví dụ:
+
+  ```html
+  <address>
+    blackgoose@example.com <br />
+    555-336
+  </address>
+  ```
+
+- Thẻ `br` chỉ được sử dụng để ngắt dòng văn bản không được sử dụng để tạo khoảng cách giữa các thẻ `html`.
+
+- **VE IMMUNITY ISSUES** trong đề bài không được in đậm.
+
+- Không để thừa các khoảng cách
+
+  ![alt text](./images/NTG_01.png)
+
+- [x] Bài 2:
+
+`Điểm: 7.5`
+
+- **strong text** là hai từ được nhấn mạnh vậy nên cần sử dụng thẻ `strong` để bọc.
+
+- Nhận xét về việc để thừa các khoảng cách tương tự như ở bài 1.
+
+- Không nên set cả `width` và `height` cho ảnh, nên chỉ set một trong hai thuộc tính đó. Vì khi sử dụng cả 2 thuộc tính, nếu kích thước của ảnh thay đổi, thì sẽ phải thay đổi cả 2 thuộc tính `width` và `height`, điều này sẽ làm cho code không tối ưu. Hoặc sẽ làm cho tỷ lệ ảnh bị méo.
+
+- [x] Bài 3:
+
+`Điểm: 9`
+
+- Tiêu đề của các bài viết nên dùng thẻ `h2` thay vì `h3` để tăng thêm độ nhấn mạnh cho tiêu đề của các bài viết.
+
+- Thẻ `img` ở trong từng thẻ `li` được thể hiện là một hình ảnh tượng trưng và mô tả cho bài viết, nên có giá trị `alt` hợp lý, có thể sử dụng nội dung của thẻ heading để làm giá trị.
+
+- [x] Bài 4:
+
+`Điểm: 8`
+
+- Toàn bộ nội dung của bài này đề thuộc phần **FOOTER** của một trang (chân trang, nằm tại vị trí cuối cùng của website) vậy nên cần bọc toàn bộ phần này trong thẻ `footer`.
+
+- Thẻ `ul` nằm dưới thẻ `h3` có nội dung là **Quick Links** là một danh sách chứa các liên kết chuyển hướng vậy nên cần bọc thẻ `nav` ra ngoài thẻ `ul` và cần sử dụng thẻ `a` thay vì thẻ `u`.
+
+- Các `icon` trong danh sách **Follow Us** đều có tác dụng để người dùng bấm vào và chuyển hướng đến các trang mạng xã hội tương ứng vậy nên cần bọc thẻ `a` ra ngoài các thẻ `i`.
+
+- [x] **Điểm mạnh:**
+
+- Sử dụng tốt các thẻ `html` để tạo được giao diện theo yêu cầu
+
+- Chủ động tìm hiểu và sử dụng tốt `CSS`, `Fontawesome`
+
+- [x] **Điểm yếu:**
+
+- Chưa thực sự hiểu về `semantic` trong `html`
+
+- Chưa cẩn thận trong việc kiểm tra kỹ giao diện mẫu trước khi code
+
+- Trình bày code chưa thực sự tốt
+
+- Quản lý các file ảnh, `html` và `css` chưa tốt khi toàn bộ các file đang ngược đặng cùng cấp với nhau
+
+- [x] **Đánh giá chung:** Cần chú ý nhiều hơn đến `semantic` và cách quản lý các file.
+
+`Điểm tổng kết: 7.65`
+
+`Note: Anh sửa lại bài làm theo nhận xét rồi sau đó báo lại cho em để em kiểm tra lại nha.`
