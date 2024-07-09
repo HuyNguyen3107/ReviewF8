@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.player {
+  width: 80%;
+  margin: 30px auto;
+}
+
+.player .play-action {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.player .play-action i {
+  cursor: pointer;
+}
+
+.player .play-timer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.progress-bar {
+  position: relative;
+  height: 12px;
+  background: gray;
+  width: 100%;
+  margin: 30px auto;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.progress-bar:hover {
+  background: goldenrod;
+  transition: 0.3s;
+}
+
+.progress-bar .progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: red;
+  border-radius: 8px;
+}
+
+.progress-bar .progress span {
+  position: absolute;
+  top: -1px;
+  right: -6px;
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: blueviolet;
+  border-radius: 50%;
+}
+
+.hover-time {
+  position: absolute;
+  bottom: 20px;
+  background: black;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-size: 12px;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.name-audio {
+  text-align: center;
+  padding: 25px 0;
+}
