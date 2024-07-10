@@ -1,4 +1,4 @@
-# Review bài tập về nhà buổi 49 - Lớp Fullstack K5
+# Review bài tập về nhà buổi 49 - Lớp Fullstack K6
 
 ## [Tran Quang Vinh](https://hoccode-eight.vercel.app/)
 
