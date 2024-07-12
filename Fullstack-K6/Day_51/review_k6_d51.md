@@ -30,4 +30,42 @@
 
   - Xử lý đầy đủ và rất tốt yêu cầu của bài tập.
 
-- [x] Đánh giá chung: **Bài làm rất tốt**, tuy nhiên cần lưu ý không đẩy file `.env` lên github.
+- [x] Đánh giá chung: **Bài làm rất tốt**, tuy nhiên cần lưu ý không đẩy file .env lên github.
+
+## [Pham Xuan Yen](https://shop-order-redux.vercel.app/)
+
+- **Tính năng phân trang:**
+
+  - Bài làm xử lý rất tốt tính năng này.
+
+- **Tính năng thêm sản phẩm vào giỏ hàng:**
+
+  - Bài làm xử lý rất tốt tính năng này.
+
+- **Tính năng xem chi tiết sản phẩm:**
+
+  - Bài làm xử lý rất tốt tính năng này.
+
+- **Tính năng xem giỏ hàng và thanh toán:**
+
+  - Bài làm xử lý rất tốt tính năng này.
+
+- **Format code:**
+
+  - Format Code rất tốt.
+
+- **Điểm mạnh:**
+
+  - Cấu trúc được tổ chức tốt: Dự án nhìn chung được tổ chức tốt với sự phân tách rõ ràng giữa các thành phần, trợ giúp và tệp cấu hình.
+
+  - Quy ước đặt tên rõ ràng: Các tệp và thư mục đều tuân theo quy ước đặt tên rõ ràng.
+
+  - Nắm vững kiến thức về JavaScript và ReactJS.
+
+  - Xử lý logic rất tốt.
+
+  - Sử dụng redux, react-router-dom rất tốt.
+
+  - Xử lý đầy đủ và rất tốt yêu cầu của bài tập.
+
+- [x] Đánh giá chung: **Bài làm rất tốt**, tuy nhiên SERVER_API nên được đặt trong file .env và không đẩy lên github.

@@ -52,7 +52,7 @@
 
 - **Warming:Sous...IMMUNITY ISSUES.** là một đoạn văn bản vì vậy cần được bọc trong thẻ `p`.
 
-- Có thể để `Cooking fir Geeks`trong thẻ `cite` vì đây là tên của một cuốn sách mà thẻ `cite` được dùng để xác định tiêu đề của một tác phẩm sáng tạo (ví dụ: một cuốn sách, một bài thơ, một bài hát, một bộ phim, một bức tranh, một tác phẩm điêu khắc, v.v.).
+- Có thể để `Cooking fir Geeks` trong thẻ `cite` vì đây là tên của một cuốn sách mà thẻ `cite` được dùng để xác định tiêu đề của một tác phẩm sáng tạo (ví dụ: một cuốn sách, một bài thơ, một bài hát, một bộ phim, một bức tranh, một tác phẩm điêu khắc, v.v.).
 
 - **Warning: Sous vide cooked salmon is not pasteurized. Avoid it if you are pregnant or h** là một đoạn văn bản có cỡ chữ nhỏ nên cần dùng thẻ `small` (xác định văn bản nhỏ hơn như bản quyền và các nhận xét phụ khác) để bọc hoặc có thể dùng `css` để chỉnh lại cỡ chữ.
 
@@ -663,5 +663,59 @@ Ví dụ: `color: yellow; padding-left: 40px; background-color: blue;`
 Đánh giá chung: Cần chú ý nhiều hơn đến `semantic` và cẩn thận hơn trong việc kiểm tra giao diện mẫu.
 
 `Điểm tổng kết: 9`
+
+`Note: Bạn sửa lại bài làm theo nhận xét rồi sau đó báo lại cho mình để mình kiểm tra lại nha.`
+
+## [Nguyen The Han](https://nguyenthehanf8.github.io/F8-Fullstack-Offline/)
+
+- [x] **Bài 1:**
+
+`Điểm: 7`
+
+- **Posted by BGB, November, 2012** không phải là một đoạn văn bản mà nó chỉ thể hiện thời gian và người post bài vì vậy nên dùng thẻ `div` hoặc thẻ `span` thay vì thẻ `header` để bọc.
+
+- Toàn bộ nội dung của bài này là nội dung của 1 bài blog vì vậy cần dùng thẻ `article` bọc toàn bộ nội dung, không sử dụng thẻ `main` để bọc nội dung và tiêu đề của một bài blog.
+
+- Có thể để `Cooking fir Geeks` trong thẻ `cite` vì đây là tên của một cuốn sách mà thẻ `cite` được dùng để xác định tiêu đề của một tác phẩm sáng tạo (ví dụ: một cuốn sách, một bài thơ, một bài hát, một bộ phim, một bức tranh, một tác phẩm điêu khắc, v.v.).
+
+- **blackgoose@example.com** và **555-336** nên được bọc trong thẻ `address` vì phần này thể hiện thông tin liên hệ của người đăng bài.
+
+- **Warming:Sous...IMMUNITY ISSUES.** là một đoạn văn bản vì vậy cần được bọc trong thẻ `p`.
+
+- **Warning: Sous vide cooked salmon is not pasteurized. Avoid it if you are pregnant or h** là một đoạn văn bản có cỡ chữ nhỏ nên cần dùng thẻ `small` (xác định văn bản nhỏ hơn như bản quyền và các nhận xét phụ khác) để bọc hoặc có thể dùng `css` để chỉnh lại cỡ chữ.
+
+- [x] **Bài 2:**
+
+`Điểm: 10`
+
+- [x] **Bài 3:**
+
+`Điểm: 9.75`
+
+- Thẻ `img` ở trong từng thẻ `li` được thể hiện là một hình ảnh tượng trưng và mô tả cho bài viết, nên có giá trị `alt` hợp lý, có thể sử dụng nội dung của `h2` để là giá trị.
+
+- [x] **Bài 4:**
+
+`Điểm: 9.5`
+
+- Thẻ `ul` nằm dưới thẻ `span` có nội dung là **Quick Links** là một danh sách chứa các liên kết chuyển hướng vậy nên cần bọc thẻ `nav` ra ngoài thẻ `ul`.
+
+- [x] **Điểm mạnh:**
+
+- Sử dụng tốt các thẻ `html` để tạo được giao diện theo yêu cầu.
+
+- Chủ động tìm hiểu và sử dụng tốt `CSS`, `Fontawesome`.
+
+- Trình bày code rất tốt(rõ ràng, dễ đọc, thụt lề đúng cách, không bị thừa các khoảng trắng).
+
+- [x] **Điểm yếu:**
+
+- Chưa thực sự hiểu về `semantic` trong `html`
+
+- Chưa cẩn thận trong việc kiểm tra kỹ giao diện mẫu trước khi code
+
+Đánh giá chung: Cần chú ý nhiều hơn đến `semantic` và cẩn thận hơn trong việc kiểm tra giao diện mẫu.
+
+`Điểm tổng kết: 8.1(trừ 1 điểm do nộp bài muộn)`
 
 `Note: Bạn sửa lại bài làm theo nhận xét rồi sau đó báo lại cho mình để mình kiểm tra lại nha.`
