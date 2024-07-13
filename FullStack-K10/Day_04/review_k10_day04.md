@@ -395,3 +395,53 @@
 `Điểm tổng kết: 8.625`
 
 `Note: Anh sửa lại bài làm theo nhận xét rồi sau đó báo lại cho em để em kiểm tra lại nha.`
+
+## [Nguyen Trung Hieu](https://hieuvsgithub.github.io/Nop_bai_tap/Day_4/)
+
+- [x] **Bài 1:**
+
+`Điểm: 7`
+
+- Theo đề bài khi `hover` vào khung màu xanh thì sẽ có các hành động theo yêu cầu, tuy nhiên trong bài làm các hành động cần thực hiện theo yêu cầu đề bài chỉ được thực hiện khi `hover` vào các thẻ `input` và `button`.
+
+- Giao diện chưa đúng với yêu cầu.
+
+- **Earn income with your CSS skills** không mang ý nghĩa là một tiêu đề chính vậy nên không sử dụng thẻ `h1` để bọc mà thay vào đó nên sử dụng thẻ `h2`.
+
+- Các thẻ `input` và `button` thuộc trong nhóm thẻ `form` và đây cũng là một **form subscribe** vậy nên cần được bọc trong thẻ `form`.
+
+- [x] **Bài 2:**
+
+`Điểm: 7`
+
+- Các dấu lớn hơn và nhỏ hơn của các thẻ đóng và thẻ mở cần nằm trên cùng một dòng
+
+  ![alt text](./images/NTH_01.png)
+
+- Giao diện chưa đúng với yêu cầu.
+
+- [x] **Bài 3:**
+
+`Điểm: 10`
+
+- [x] **Bài 4:**
+
+`Điểm: 6`
+
+- Giao diện chưa đúng với yêu cầu.
+
+- Nhận xét về cách trình bày giống với bài 2.
+
+- **JS Maps Conclusion** không mang ý nghĩa là một tiêu đề chính vậy nên không sử dụng thẻ `h1` để bọc mà thay vào đó nên sử dụng thẻ `h2`.
+
+- [x] **Điểm yếu:**
+
+- Không duy trì được điểm mạnh và chưa cải thiện được điểm yếu của các buổi trước đó.
+
+- Chưa cẩn thận trong việc kiểm tra yêu cầu bài tập.
+
+- [x] **Đánh giá chung:** Cần cố gắng và dành nhiều thời gian hơn cho bài tập về nhà, chủ động đặt câu hỏi cho trợ giảng để có thể giải quyết bài tập một cách tốt nhất.
+
+`Điểm tổng kết: 7.5`
+
+`Note: Bạn sửa lại bài làm theo nhận xét rồi sau đó báo lại cho mình để mình kiểm tra lại nha.`
