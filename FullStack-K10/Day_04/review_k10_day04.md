@@ -44,7 +44,7 @@
 
 - [x] **Bài 1:**
 
-`Điểm: 6.5`
+`Điểm: 5.5`
 
 - Chưa thực hiện yêu cầu của bài tập khi `hover` vào khung màu xanh.
 
@@ -56,13 +56,17 @@
 
 - Cần thêm thuộc tính `name` cho thẻ `input` có thuộc tính `type="email"` để trang web có thể lấy được giá trị của `input` và xử lý ở phía `server-side`.
 
+- Thẻ `style` dưới thẻ `head` và trên thẻ `body` là không đúng về mặt ngữ nghĩa và cũng không tuân thủ chuẩn `HTML`. Thẻ `style` được sử dụng để nhúng `CSS` vào trong trang `HTML` và nó chỉ nên được đặt trong phần `head` của tài liệu `HTML`.
+
 - [x] **Bài 2:**
 
-`Điểm: 6.5`
+`Điểm: 5.5`
 
 - Bài tập này thể hiện một đoạn trích dẫn vậy nên nội dung được trích dẫn cần được bọc trong thẻ `blockquote`.
 
 - Giao diện chưa giống với yêu cầu của bài tập.
+
+- Nhật xét vể vị trí đặt thẻ `style` tương tự như bài 1.
 
 - [x] **Bài 3:**
 
@@ -72,11 +76,13 @@
 
 - [x] **Bài 4:**
 
-`Điểm: 8`
+`Điểm: 7`
 
 - **JS Maps Conclusion** không mang ý nghĩa là một tiêu đề chính vậy nên không sử dụng thẻ `h1` để bọc mà thay vào đó nên sử dụng thẻ `h2`.
 
 - Nhận xét về việc thừa các khoảng trắng tương tự như bài 1.
+
+- Nhật xét vể vị trí đặt thẻ `style` tương tự như bài 1.
 
 - [x] **Điểm mạnh:**
 
@@ -88,7 +94,7 @@
 
 - [x] **Đánh giá chung:** Cần chú ý đến yêu cầu và giao diện của bài tập trước khi code và nên đặt thẻ `style` nằm trong thẻ `head`.
 
-`Điểm tổng kết: 7.5`
+`Điểm tổng kết: 6.75`
 
 `Note: Anh sửa lại bài làm theo nhận xét rồi sau đó báo lại cho em để em kiểm tra lại nha.`
 
@@ -339,5 +345,53 @@
 - [x] **Đánh giá chung:** Bài làm tốt, tuy nhiên cần chú ý hơn đến cách đặt tên `class` và việc đặt tất cả các file `HTML` và `CSS` của các bài tập ngang cấp với nhau trong cùng một thư mục và đặt tên file kết hợp giữa tiếng Anh và tiếng Việt làm giảm tính cấu trúc và dễ dàng quản lý của dự án. Điều này có thể dẫn đến khó khăn trong việc tìm kiếm và duy trì mã nguồn. Nên tạo thư mục riêng cho mỗi bài tập để phân tách các file `HTML` và `CSS`, sử dụng tiếng Anh hoặc tiếng Việt một cách nhất quán cho tên file và tránh sự kết hợp ngôn ngữ(nên sử dụng tiếng Anh).
 
 `Điểm tổng kết: 9.25`
+
+`Note: Anh sửa lại bài làm theo nhận xét rồi sau đó báo lại cho em để em kiểm tra lại nha.`
+
+## [Nguyen Truong Giang](https://nguyentruonggiang212001.github.io/f8-fullstack-k10/Assginnmet4/)
+
+- [x] **Bài 1:**
+
+`Điểm: 7.5`
+
+- Đặt tên `class` là **banner** cho một **form subscribe** không phù hợp với mục đích và nội dung của phần tử đó. Tên **banner** thường được sử dụng để chỉ các phần tử quảng cáo hoặc thông báo lớn trên trang web. Điều này có thể gây nhầm lẫn và làm giảm tính rõ ràng và dễ hiểu của mã nguồn. Nên sử dụng các tên `class` như **subscribe-form** hoặc **footer-subscribe** để phản ánh chính xác chức năng của **form subscribe** trong `footer`.
+
+- Theo đề bài khi `hover` vào khung màu xanh thì sẽ có các hành động theo yêu cầu, tuy nhiên trong bài làm khi `hover` vào khung màu xanh màu nền của button chưa chuyển sang màu vàng(Giống như chữ **Earn income**) và chữ của button chưa chuyển sang màu trắng(`#fff`) mà chỉ khi `hover` vào thẻ `button` mới có.
+
+- [x] **Bài 2:**
+
+`Điểm: 9`
+
+- Thẻ `style` dưới thẻ `head` và trên thẻ `body` là không đúng về mặt ngữ nghĩa và cũng không tuân thủ chuẩn `HTML`. Thẻ `style` được sử dụng để nhúng `CSS` vào trong trang `HTML` và nó chỉ nên được đặt trong phần `head` của tài liệu `HTML`.
+
+- [x] **Bài 3:**
+
+`Điểm: 9`
+
+- Nhật xét vể vị trí đặt thẻ `style` tương tự như bài 2.
+
+- [x] **Bài 4:**
+
+`Điểm: 9`
+
+- Nhật xét vể vị trí đặt thẻ `style` tương tự như bài 2.
+
+- [x] **Điểm mạnh:**
+
+- Vẫn duy trì được điểm mạnh của các buổi trước.
+
+- Hiểu và áp dụng tốt `CSS Selector`, `Pseudo-classes`, `Pseudo-elements`.
+
+- Sử dụng tốt `comment`.
+
+- [x] **Điểm yếu:**
+
+- Chưa cẩn thận trong việc kiểm tra yêu cầu bài tập.
+
+- Đặt tên `class` chưa hợp lý.
+
+- [x] **Đánh giá chung:** Bài làm tốt, tuy nhiên cần chú ý cách đặt tên `class`, vị trí đặt thẻ `style` và yêu cầu của bài tập.
+
+`Điểm tổng kết: 8.625`
 
 `Note: Anh sửa lại bài làm theo nhận xét rồi sau đó báo lại cho em để em kiểm tra lại nha.`
