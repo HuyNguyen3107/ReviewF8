@@ -445,3 +445,39 @@
 `Điểm tổng kết: 7.5`
 
 `Note: Bạn sửa lại bài làm theo nhận xét rồi sau đó báo lại cho mình để mình kiểm tra lại nha.`
+
+## [Nguyen The Han](https://nguyenthehanf8.github.io/F8-Fullstack-Ofline/Day-4/)
+
+- [x] **Bài 1:**
+
+`Điểm: 9.5`
+
+- **Form Subscribe** là 1 thành phần rất quan trọng trên website. **Form** này thường được đặt ở **Footer** của một trang (chân trang, nằm tại vị trí cuối cùng của website) do vậy nên bọc toàn bộ phần này trong thẻ `footer`.
+
+- [x] **Bài 2:**
+
+`Điểm: 10`
+
+- [x] **Bài 3:**
+
+`Điểm: 10`
+
+- [x] **Bài 4:**
+
+`Điểm: 10`
+
+- [x] **Điểm mạnh:**
+
+- Vẫn duy trì được điểm mạnh của các buổi trước.
+
+- Hiểu và áp dụng tốt `CSS Selector`, `Pseudo-classes`, `Pseudo-elements`.
+
+- [x] **Điểm yếu:**
+
+- Chưa cải thiện được điểm yếu của buổi trước đó.
+
+Đánh giá chung: Bài làm rất tốt.
+
+`Điểm tổng kết: 7.875(trừ 2 điểm vì nộp bài tập muộn)`
+
+`Note: Bạn sửa lại bài làm theo nhận xét rồi sau đó báo lại cho mình, để mình kiểm tra lại nha.`
