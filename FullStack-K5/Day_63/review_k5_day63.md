@@ -12,4 +12,4 @@
 
 ## [Le Tung Duong](https://github.com/duong1801/f8-fullstack-k5)
 
-- Không tìm thấy bài làm
+- Không tìm thấy bài làm.
