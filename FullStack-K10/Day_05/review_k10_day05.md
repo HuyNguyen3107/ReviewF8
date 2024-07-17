@@ -365,3 +365,162 @@
 `Điểm tổng kết: 9`
 
 `Note: Anh sửa lại bài làm theo nhận xét rồi sau đó báo lại cho em để em kiểm tra lại nha.`
+
+## [Nguyen Trung Hieu](https://hieuvsgithub.github.io/Nop_bai_tap/Day_5/Bai_1.html)
+
+- [x] **Bài 1:**
+
+`Điểm: 7`
+
+- **Blurred Background** nên sử dụng thẻ `h2` thay vì thẻ `h3` để tăng thêm độ nhấn mạnh cho tiêu đề.
+
+- Cần thêm thuộc tính `background-repeat: no-repeat;` vào `body` để tránh việc lặp `background-image`.
+
+- Giao diện chưa giống với giao diện mẫu khi phần `Blurred Background` đang được căn giữa khung ảnh trong khi giao diện mẫu thì không và đè lên toàn bộ chữ `React`.
+
+  - Đề xuất sửa:
+
+    ```css
+    article {
+      ...
+      top: 40%;
+      left: 45%;
+      ...
+    }
+    ```
+
+- `Font` chữ trong bài làm là `font` chữ có chân trong khi `font` chữ trong giao diện mẫu là `font` chữ không chân.
+
+- [x] **Bài 2:**
+
+`Điểm: 5`
+
+- Nhận xét về `font` chữ giống với bài 1.
+
+- Đặt tên `class` chưa hợp lý, các tên `class` như **b**, **bb** và **bbb** không đủ rõ ràng và mô tả không chính xác nội dung hoặc chức năng của phần tử.
+
+- Chưa thực hiện bất kỳ một yêu cầu nào của đề bài.
+
+- [x] **Bài 3:**
+
+`Điểm: 6`
+
+- Ngắt dòng văn bản chưa hợp lý
+
+  ![alt text](./images/NTH.png)
+
+- Giao diện của bài làm chưa được `css` do toàn bộ file `css` đã được `comment`.
+
+- [x] **Điểm yếu:**
+
+- Chưa cải thiện được điểm yếu của các buổi trước đó.
+
+- Chưa cẩn thận trong việc kiểm tra kỹ giao diện mẫu và yêu cầu đề bài trước khi code.
+
+- Đặt tên `class` chưa hợp lý.
+
+- Chưa kiểm tra kỹ lại toàn bộ bài làm trước và sau khi nộp bài tâp.
+
+- [x] **Đánh giá chung:** Bài làm chưa tốt, cần cố gắng và dành nhiều thời gian hơn cho bài tập về nhà, chủ động đặt câu hỏi cho trợ giảng để có thể giải quyết bài tập một cách tốt nhất.
+
+`Điểm tổng kết: 6`
+
+`Note: Bạn sửa lại bài làm theo nhận xét rồi sau đó báo lại cho mình để mình kiểm tra lại nha.`
+
+## [Tran Ngoc Duy](https://tranduyriba.github.io/bai-tap-f8/Day-5/bai-1.html)
+
+- [x] **Bài 1:**
+
+`Điểm: 7`
+
+- `Font` chữ trong bài làm là `font` chữ có chân trong khi `font` chữ trong giao diện mẫu là `font` chữ không chân.
+
+- **F8 Fullstack** là một liên kết vậy nên cần được bọc bởi thẻ `a`.
+
+- Tên `class` như `section-bai1`, `div-bai1`, `div-bai2` không mô tả rõ ràng chức năng hoặc nội dung của phần tử. Tránh đặt tên `class` kết hợp giữa tiếng Anh và tiếng Việt, vì nó có thể gây khó hiểu và thiếu nhất quán. Nên sử dụng các tên `class` cụ thể và có ý nghĩa hơn, bằng một ngôn ngữ duy nhất, chẳng hạn như `section-example`, `content-wrapper`, `content-description`. Điều này sẽ giúp mã dễ hiểu và dễ bảo trì hơn.
+
+- [x] **Bài 2:**
+
+`Điểm: 5`
+
+- Chưa thực hiện được bất kỳ yêu cầu nào của đề bài.
+
+- `Selector` dấu `~` được sử dụng để chọn tất cả các phần tử là anh em kế tiếp của một phần tử cụ thể và nằm sau nó trong cùng cấp. Nói cách khác, nó chọn các phần tử anh em mà xuất hiện sau phần tử được chọn đầu tiên trong cùng một cấp độ cha, do đó việc bài làm đang sử dụng `selector` này để chọn thẻ `p` nằm sau thẻ `input` có `class` bắt đầu là **checkbox** là chưa đúng vì thẻ `input` đang được đặt trong thẻ `div` có `class` là **quest-heading** trong khi thẻ `p` nằm kế tiếp thẻ `div` đó.
+
+- Thuộc tính `display` không có giá trị `hidden`, cần sửa lại giá trị của thuộc tính là `none`.
+
+- `Selector` dấu `+` được sử dụng để chọn phần tử là anh em kế tiếp ngay sau một phần tử cụ thể và cùng cấp. Nói cách khác, nó chỉ chọn phần tử anh em ngay lập tức xuất hiện sau phần tử được chọn đầu tiên trong cùng một cấp độ cha, do đó việc bài làm đang sử dụng `selector` này để chọn thẻ `input` nằm ngay sau thẻ `div` có `class` có chữ **question** là chưa đúng vì thẻ `input` đang được đặt trong thẻ `div` có `class` có chữ **question** chứ không phải nằm ngay sau thẻ thẻ `div` đó.
+
+- Nhận xét về `font` chữ giống với bài 1.
+
+- [x] **Bài 3:**
+
+`Điểm: 7`
+
+- Ngắt dòng văn bản chưa hợp lý
+
+  ![alt text](./images/TND.png)
+
+- Nhận xét về `font` chữ giống với bài 1.
+
+- Giao diện chưa đúng với yêu cầu.
+
+- [x] **Điểm mạnh:**
+
+- Duy trì được một vài điểm mạnh của các buổi trước đó.
+
+- [x] **Điểm yếu:**
+
+- Chưa cải thiện được điểm yếu của các buổi trước đó.
+
+- Chưa cẩn thận trong việc kiểm tra kỹ giao diện mẫu và yêu cầu đề bài trước khi code.
+
+- Đặt tên `class` chưa hợp lý.
+
+- Chưa hiểu và vận dụng tốt `selector` trong `css`.
+
+- [x] **Đánh giá chung:** Bài làm chưa tốt, cần cố gắng và dành nhiều thời gian hơn cho bài tập về nhà, chủ động đặt câu hỏi cho trợ giảng để có thể giải quyết bài tập một cách tốt nhất.
+
+`Note: Anh sửa lại bài làm theo nhận xét rồi sau đó báo lại cho em để em kiểm tra lại nha.`
+
+## [Nguyen The Han](https://nguyenthehanf8.github.io/F8-Fullstack-Ofline/Day-5/)
+
+- [x] **Bài 1:**
+
+`Điểm: 9`
+
+- `Font` chữ trong bài làm là `font` chữ có chân trong khi `font` chữ trong giao diện mẫu là `font` chữ không chân.
+
+- [x] **Bài 2:**
+
+`Điểm: 6`
+
+- Chưa thực hiện bất kỳ một yêu cầu nào của đề bài.
+
+- [x] **Bài 3:**
+
+`Điểm: 8`
+
+- Ngắt dòng văn bản chưa hợp lý.
+
+  ![alt text](./images/NTH_01.png)
+
+- Nhận xét về `font` chữ giống với bài 1.
+
+- [x] **Điểm mạnh:**
+
+- Vẫn duy trì được điểm mạnh của các buổi trước.
+
+- Sử dụng tốt các thuộc tính định dạng văn bản.
+
+- Chủ động tìm hiểu và sử dụng tốt một số thuộc tính chưa được học.
+
+- [x] **Điểm yếu:**
+
+- Chưa cải thiện được điểm yếu của buổi trước đó.
+
+Đánh giá chung: Cần chú ý thực hiện đúng yêu cầu bài tập, chủ động đặt câu hỏi cho trợ giảng để có thể giải quyết bài tập một cách tốt nhất.
+
+`Điểm tổng kết: 7.67`
+
+`Note: Bạn sửa lại bài làm theo nhận xét rồi sau đó báo lại cho mình, để mình kiểm tra lại nha.`
