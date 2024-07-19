@@ -57,3 +57,43 @@
   - Chưa hoàn thành đầy đủ yêu cầu bài tập
 
 - [x] Đánh giá chung: Bài làm chưa hoàn thiện đủ chức năng theo yêu cầu bài làm và cần bổ sung để hoàn thiện bài tốt hơn.
+
+## [Thai Duy Tien](https://day49-three.vercel.app/)
+
+- **Chức năng chuyển và lưu giao diện sáng tối:**
+
+  - Chưa lưu được giao diện sáng, tối cho lần vào tiếp theo.
+
+- **Chức năng thay đổi range đoán số:**
+
+  - Khi kéo về 0 thì bài làm đang hiển thị `-Infinity/-Infinity`.
+
+  - Nên giảm số lượng thông báo toast khi thực hiện kéo thả sẽ hợp lý hơn, hiện thông báo quá nhiều mỗi khi người dùng thay đổi range đoán số.
+
+- **Chức năng đoán số:**
+
+  - Chưa xử lý trường hợp người chơi đoán liên tục một số giống nhau.
+
+  - Khi `reload` lại trang chưa `autofocus` vào `input`.
+
+  - Chưa xử lý case khi chưa `focus` vào `input`, nếu bấm số hoặc sử dụng mũi tên lên xuống thì phải lập tức `focus` vào `input` để nhập.
+
+  - Bài làm đang cho phép người dùng nhập vào và đoán số 0 trong khi yêu cầu người dùng tìm kiếm một số từ 1 đến 100.
+
+- **Chức năng thống kê kết quả của người chơi:**
+
+  - Chưa xử lý case sử dụng nút `Enter` để `submit` nếu chưa hết lượt chơi, nếu đã hết lượt chơi thì nút `enter` để chơi lại.
+
+  - Chưa lưu được lịch sử các lần chơi.
+
+  - Chưa xử lý case bấm nút xoá có `confirm` để xoá hết lịch sử chơi và sử dụng nút `Esc` để thoát `modal confirm` xoá.
+
+  - Xử lý hiển thị lịch sử chơi chưa đúng với yêu cầu
+
+- **Điểm yếu:**
+
+  - Chưa cẩn thận trong việc kiểm tra các trường hợp có thể xảy ra.
+
+  - Chưa hoàn thành đầy đủ yêu cầu bài tập.
+
+- [x] Đánh giá chung: Bài làm chưa tốt, cần xử lý đủ các chức năng theo yêu cầu và khi nộp bài tập cần gửi cả link source code để trợ giảng kiểm tra và review.

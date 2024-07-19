@@ -481,3 +481,51 @@
 `Điểm tổng kết: 7.875(trừ 2 điểm vì nộp bài tập muộn)`
 
 `Note: Bạn sửa lại bài làm theo nhận xét rồi sau đó báo lại cho mình, để mình kiểm tra lại nha.`
+
+## [Tran Ngoc Duy](https://tranduyriba.github.io/bai-tap-f8/Day-4/bai-1.html)
+
+- [x] **Bài 1:**
+
+`Điểm: 8`
+
+- Các thẻ `input` và `button` thuộc trong nhóm thẻ `form` và đây cũng là một **form subscribe** vậy nên cần được bọc trong thẻ `form`.
+
+- Cần thêm thuộc tính `name` cho thẻ `input` có thuộc tính `type="email"` để trang web có thể lấy được giá trị của `input` và xử lý ở phía `server-side`.
+
+- Tên `class` như **section-bai1** và **h2-bai1** không mô tả rõ ràng chức năng hoặc nội dung của phần tử. Tránh đặt tên `class` kết hợp giữa tiếng Anh và tiếng Việt, vì nó có thể gây khó hiểu và thiếu nhất quán. Nên sử dụng các tên `class` cụ thể và có ý nghĩa hơn, bằng một ngôn ngữ duy nhất, chẳng hạn như `section-signup`, `signup-heading`, `signup-description`. Điều này sẽ giúp mã dễ hiểu và dễ bảo trì hơn.
+
+- [x] **Bài 2:**
+
+`Điểm: 10`
+
+- [x] **Bài 3:**
+
+`Điểm: 9`
+
+- Nhận xét về cách đặt tên `class` tương tự bài 1.
+
+- [x] **Bài 4:**
+
+`Điểm: 7.5`
+
+- Nhận xét về cách đặt tên `class` tương tự bài 1.
+
+- **.map()** rong giao diện mẫu có phần `background` màu xanh nhạt trong khi bài làm không có, có thể `css` cho thẻ `code` để đổi màu `background`.
+
+- Các dấu lớn hơn và nhỏ hơn của các thẻ đóng và thẻ mở cần nằm trên cùng một dòng
+
+  ![alt text](./images/TND.png)
+
+- [x] **Điểm mạnh:**
+
+- Vẫn duy trì được điểm mạnh của các buổi trước tuy nhiên việc code `html` chuẩn `semantic` đã tốt hơn rất nhiều.
+
+- [x] **Điểm yếu:**
+
+- Đặt tên `class` chưa hợp lý.
+
+Đánh giá chung: Bài làm tốt.
+
+`Điểm tổng kết: 8.625`
+
+`Note: Anh sửa lại bài làm theo nhận xét rồi sau đó báo lại cho em để em kiểm tra lại nha.`

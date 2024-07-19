@@ -189,3 +189,25 @@
 - Xử lý `validate` tốt dữ liệu người dùng nhập vào.
 
 - [x] **Đánh giá chung:** Bài làm rất tốt.
+
+## [Minh Thuan](https://minhthuan1809.github.io/F8-Fullstack/day-31/)
+
+- Bài làm chưa xử lý trường hợp số lượng sản phẩm mà người dùng nhập vào là một số nhỏ hơn `0` hoặc số `e`. Trường hợp tương tự cũng xảy ra khi người dùng chỉnh sửa số lượng sản phẩm trong giỏ hàng.
+
+- Khi người dùng xóa một sản phẩm trong giỏ hàng chưa thực hiện việc `confirm`.
+
+- Chưa xử lý chức năng xóa toàn bộ sản phẩm trong giỏ hàng.
+
+- Chưa xử lý chức năng cập nhật giỏ hàng.
+
+- Bài làm đang fix cứng thông tin và số lượng sản phẩm ở bên HTML, điều này là không nên vì nếu sau này muốn thêm sản phẩm thì phải vào file HTML để tạo thêm một 1 sản phẩm nữa, nên tạo ra một mảng chứa thông tin các sản phẩm và từ đó render HTML các sản phẩm sẽ hợp lý hơn.
+
+- Chưa sử dụng được `localStorage` và `JSON` để lưu trữ dữ liệu vào trình duyệt.
+
+- [x] **Điểm yếu:**
+
+- Chưa cẩn thận trong việc kiểm tra kỹ các trường hợp có thể xảy ra.
+
+- Chưa xử lý đủ các chức năng của bài tập.
+
+- [x] **Đánh giá chung:** Bài làm chưa tốt, cần dành nhiều thời gian hơn cho bài tập về nhà và cẩn thận hơn trong việc kiểm tra các trường hợp có thể xảy ra, chủ động đặt câu hỏi cho trợ giảng để có thể giải quyết bài tập một cách tốt nhất.

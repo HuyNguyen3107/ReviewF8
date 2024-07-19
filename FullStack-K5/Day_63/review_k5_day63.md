@@ -12,4 +12,16 @@
 
 ## [Le Tung Duong](https://github.com/duong1801/f8-fullstack-k5)
 
-- Không tìm thấy bài làm.
+- Bảng **customers** chưa có trường số điện thoại của khách hàng.
+
+- Bảng **products** chưa có trường mã sản phẩm.
+
+- Toàn bộ các bảng đều nên có hai trường `created_at` và `updated_at`.
+
+- Ở trong bảng `orders` đang có trường tên là `status` thể hiện trạng thái của 1 sản phẩm là `true` or `false`, nhưng đối với quản lý đơn hàng thì trạng thái sản phẩm ở đây có vẻ không hợp lý cho lắm, trên thực tế trạng thái của 1 đơn hàng thường có các giá trị là **Đã xác nhận**, **Đang vận chuyển**, **Đã thanh toán**, **Đã huỷ** thì sẽ hợp lý hơn.
+
+- Các trường `quantity` và `total_quantity` thể hiện số lượng sản phẩm nên có kiểu dữ liệu là `bigint` vì số lượng sản phẩm có thể sẽ rất lớn. Các trường `price` thể hiện giá của một sản phẩm do đó nên để kiểu dữ liệu là `real`.
+
+- Chưa có các câu lệnh `INSERT` (thêm dữ liệu vào các bảng **customers**, **products**,...).
+
+-

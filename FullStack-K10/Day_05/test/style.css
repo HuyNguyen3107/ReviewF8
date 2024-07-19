@@ -1,12 +1,40 @@
-input[type="checkbox"]:checked ~ p {
-  display: none;
+@font-face {
+  font-family: Lato;
+  src: url("../../fonts/Lato-Light.ttf");
 }
-div[class$="question"] + input {
-  background-color: aqua;
+html {
+  font-size: 62.5%;
+  font-family: Lato;
 }
-
-.quest-heading {
-  background-color: #d95924;
-  padding: 5px;
-  color: white;
+body {
+  width: 60%;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+h1 {
+  font-family: "Lobster";
+  font-size: 5rem;
+  padding: 0rem 3rem 1rem 3rem;
+  font-weight: lighter;
+}
+p {
+  font-size: 1.5rem;
+  align-items: center;
+  text-align: start;
+  padding: 0rem 3rem 0rem 3rem;
+  opacity: 0.5;
+}
+span {
+  color: red;
+}
+.form-submit {
+  display: block;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
+.name {
+  width: 100%;
+  border: 1px solid black;
+  padding: 1rem;
 }
