@@ -24,4 +24,14 @@
 
 - Chưa có các câu lệnh `INSERT` (thêm dữ liệu vào các bảng **customers**, **products**,...).
 
--
+## [Luu Ngoc Duong](https://github.com/duongluu9898/k5_duongluu_baitap/blob/main/btvn.sql)
+
+- Trường `phone` nên có kiểu dữ liệu là `character varying` thay vì `integer`. Trường số điện thoại trong cơ sở dữ liệu nên được lưu dưới dạng chuỗi vì không có phép toán số học nào cần thiết, cho phép giữ định dạng linh hoạt với các ký tự đặc biệt (như dấu gạch ngang, dấu cách, hoặc dấu cộng), và tránh việc mất các số 0 đầu tiên trong các số điện thoại quốc tế hoặc địa phương.
+
+- Trường mã sản phẩm nên có kiểu dữ liệu là `character varying` thay vì `integer`.
+
+- Ở trong bảng `orders` đang có trường tên là `status` thể hiện trạng thái của 1 sản phẩm là `true` or `false`, nhưng đối với quản lý đơn hàng thì trạng thái sản phẩm ở đây có vẻ không hợp lý cho lắm, trên thực tế trạng thái của 1 đơn hàng thường có các giá trị là **Đã xác nhận**, **Đang vận chuyển**, **Đã thanh toán**, **Đã huỷ** thì sẽ hợp lý hơn.
+
+- Trường `price` thể hiện giá của một sản phẩm do đó nên để kiểu dữ liệu là `real`.
+
+- Chưa có các câu lệnh để tạo các bảng thể hiện danh sách đơn hàng và chi tiết đơn hàng, thiết lập mối quan hệ, ràng buộc giữa các bảng.
