@@ -492,7 +492,7 @@ Not found
 
 - Chưa cẩn thận trong việc kiểm tra kỹ yêu cầu và giao diện mẫu của bài tập.
 
-- [x] **Đánh giá chung:** Cần dành nhiều thời gian hơn cho bài tập, `chủ động đặt câu hỏi cho trợ giảng để có thể giải quyết bài tập một cách tốt nhất`.
+- [x] **Đánh giá chung:** Cần dành nhiều thời gian hơn cho bài tập, `chủ động đặt câu hỏi cho trợ giảng để có thể giải quyết bài tập một cách tốt nhất`. Quản lý các file `html` và `css` chưa tốt khi toàn bộ các file đang được đặt ngang cấp với nhau trong cùng một thư mục, điều này dẫn đến việc khó quản lý khi số lượng các file tăng lên.
 
 `Điểm tổng kết: 5.67`
 
