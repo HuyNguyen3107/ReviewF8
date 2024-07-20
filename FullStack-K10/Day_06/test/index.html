@@ -3,89 +3,34 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./style.css">
-    <title>Bai 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Menu ngang</title>
 </head>
 
 <body>
-    <div class="content_container">
-        <!-- Tiêu đề chào mời người dùng -->
-        <h2 class="lobster-regular">Hey there</h2>
-        <!-- Đoạn văn bản mô tả mục đích của form -->
-        <p>
-            <span>We'd like to hear from you.</span>
-            Send us your message or just say hi with our contact form or directly via phone, we love to chat.
-        </p>
-        <!-- Form liên hệ -->
-        <form action="#">
-            <!-- Input field cho tên -->
-            <div class="input">
-                <input type="text" placeholder="Your name" name="name">
-                <span class="notification">Enter your name</span> <!-- Thông báo nhập tên -->
-                <div class="input_icon">
-                    <i class="ri-user-line"></i> <!-- Icon người dùng -->
-                </div>
-                <i class="ri-star-s-fill star"></i> <!-- Dấu sao -->
-                <span class="delete">&times;</span> <!-- Nút xóa -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://rainbowit.net/html/histudy/assets/images/logo/logo.png" alt="Logo" />
+        </div>
+        <div class="menu">
+            <div class="category"><i class="fas fa-th"></i> Category</div>
+            <div class="menu-item">Home <i class="fas fa-chevron-down"></i></div>
+            <div class="menu-item">Courses <i class="fas fa-chevron-down"></i></div>
+            <div class="menu-item">
+                Dashboard <i class="fas fa-chevron-down"></i>
             </div>
-            <!-- Input field cho email -->
-            <div class="input">
-                <input type="email" placeholder="your@domain.com" name="email">
-                <span class="notification">Enter your email</span> <!-- Thông báo nhập email -->
-                <div class="input_icon">
-                    <i class="ri-mail-line"></i> <!-- Icon email -->
-                </div>
-                <i class="ri-star-s-fill star"></i> <!-- Dấu sao -->
-                <span class="delete">&times;</span> <!-- Nút xóa -->
+            <div class="menu-item">Pages <i class="fas fa-chevron-down"></i></div>
+            <div class="menu-item">
+                Elements <i class="fas fa-chevron-down"></i>
             </div>
-            <!-- Input field cho số điện thoại -->
-            <div class="input">
-                <input type="text" placeholder="+44 00 123" name="phone_number">
-                <span class="notification">Enter your phone number</span> <!-- Thông báo nhập số điện thoại -->
-                <div class="input_icon">
-                    <i class="ri-phone-line"></i> <!-- Icon điện thoại -->
-                </div>
-                <span class="delete">&times;</span> <!-- Nút xóa -->
-            </div>
-            <!-- Dropdown cho chọn chủ đề -->
-            <div class="input">
-                <select name="subject">
-                    <option value="none">Subject</option>
-                    <option value="math">Math</option>
-                    <option value="history">History</option>
-                </select>
-                <span class="notification">Enter your subject</span> <!-- Thông báo chọn chủ đề -->
-                <div class="input_icon">
-                    <i class="ri-book-3-line"></i> <!-- Icon sách -->
-                </div>
-                <i class="ri-expand-up-down-fill star"></i> <!-- Dấu của thẻ select -->
-            </div>
-            <!-- Textarea cho tin nhắn -->
-            <div class="input input_textarea">
-                <textarea name="message" cols="47" rows="10" placeholder="Message"></textarea>
-                <span class="notification">Enter your message</span> <!-- Thông báo nhập tin nhắn -->
-                <div class="input_icon">
-                    <i class="ri-chat-2-line icon_textarea"></i> <!-- Icon tin nhắn -->
-                </div>
-                <i class="ri-star-s-fill star"></i> <!-- Dấu sao -->
-                <span class="delete">&times;</span> <!-- Nút xóa -->
-            </div>
-            <!-- Checkbox để chọn gửi bản sao của tin nhắn -->
-            <div class="form_footer">
-                <input type="checkbox" name="copy" id="coppy">
-                <label for="coppy">
-                    <span class="checkmark"></span>
-                    <span class="coppy_message">Send me a copy of this message</span>
-                </label>
-                <!-- Nút gửi form -->
-                <button>Send</button>
-            </div>
-        </form> <!-- Kết thúc form liên hệ -->
-    </div> <!-- Kết thúc content_container -->
+            <div class="menu-item">Blog <i class="fas fa-chevron-down"></i></div>
+        </div>
+        <div class="join-now">
+            <button>Join now</button>
+        </div>
+    </nav>
 </body>
 
 </html>
