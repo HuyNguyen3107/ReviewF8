@@ -256,9 +256,68 @@
 
 `Note: Anh sửa lại bài làm theo nhận xét rồi sau đó báo lại cho em để em kiểm tra lại nha.`
 
-## [Nguyen Truong Giang]()
+## [Nguyen Truong Giang](https://nguyentruonggiang212001.github.io/f8-fullstack-k10/Assignment6/ex01.html)
 
-Not found
+- [x] **Bài 1:**
+
+`Điểm: 7`
+
+- Khi `focus`, `active` vào các `field` chưa thực hiện theo yêu cầu bài tập.
+
+- Hiện tại bài làm đang không sử dụng được font `Lato` là vì không có liên kết đến font `Lato` trong phần `head`. Để sử dụng font `Lato` từ `Google Fonts` cần thêm đường dẫn tương ứng vào file `HTML`:
+
+  ```html
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+    rel="stylesheet"
+  />
+  ```
+
+- Không được sử dụng thẻ inline (thẻ `label`) để bọc một thẻ block (`div`). Một ngoại lệ là thẻ `a` (anchor), là thẻ inline duy nhất có thể bao bọc các thẻ block như div tuy nhiên chỉ nên sử dụng trong một số trường hợp đặc biệt để tạo liên kết bao quanh các phần tử block nhằm cải thiện trải nghiệm người dùng.
+
+- Nên thêm thuộc tính `resize: none;` cho thẻ `textarea` để ngăn người dùng thay đổi kích thước của `textarea` bằng cách kéo các góc của nó.
+
+- [x] **Bài 2:**
+
+`Điểm: 5`
+
+- Chưa có bóng mờ phía sau icon dựa theo `background` của icon.
+
+- Màu của `background`, chữ và font chữ không đúng với yêu cầu bài tập.
+
+- Việc đặt tên `class` như `icon1, icon2, v.v.` có thể gây khó khăn trong việc quản lý và bảo trì mã nguồn, vì các tên này không cung cấp thông tin rõ ràng về chức năng hoặc nội dung của các phần tử. Để cải thiện tính đọc hiểu và dễ bảo trì, bạn nên sử dụng tên `class` có ý nghĩa hơn, ví dụ như user-icon, email-icon, hoặc phone-icon, tùy thuộc vào nội dung hoặc chức năng của các icon.
+
+- Nên sử dụng kết hợp các `selector` cho những đoạn `css` được lặp đi lặp lại.
+
+  ![alt text](image-1.png)
+
+- [x] **Bài 3:**
+
+`Điểm: 9`
+
+- Background của nút bấm **Join Now** chưa giống với giao diện mẫu.
+
+- Thẻ `ul` trong bài làm là một danh sách chứa các liên kết chuyển hướng vậy nên cần bọc thẻ `nav` ra ngoài thẻ `ul`.
+
+- [x] **Điểm mạnh:**
+
+- Vẫn duy trì được một vài điểm mạnh của các buổi trước.
+
+- Chủ động tìm hiểu và sử dụng các thuộc tính `css` chưa được học.
+
+- [x] **Điểm yếu:**
+
+- Chưa cẩn thận trong việc kiểm tra kỹ yêu cầu và giao diện mẫu của bài tập.
+
+- Chưa thực sự hiểu về `semantic`.
+
+- Chưa hiểu về cách sử dụng font chữ.
+
+- [x] **Đánh giá chung:** Cần chú ý thực hiện đúng yêu cầu bài tập, chủ động đặt câu hỏi cho trợ giảng để có thể giải quyết bài tập một cách tốt nhất.
+
+`Điểm tổng kết: 7`
+
+`Note: Anh sửa lại bài làm theo nhận xét rồi sau đó báo lại cho em, để em kiểm tra lại nha.`
 
 ## [Nguyen Thanh An](https://ann573.github.io/f8-fullstack-k10/BTVN/Day6/)
 
