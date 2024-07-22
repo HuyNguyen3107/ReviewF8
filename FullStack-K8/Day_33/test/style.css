@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+}
+.list {
+  width: 600px;
+  padding: 10px;
+  background: rgb(147, 186, 199);
+}
+.list-item.active {
+  background-color: orange;
+  color: #fff;
+}
+.list-item {
+  background-color: lightblue;
+  padding: 10px;
+  border: 1px solid white;
+  margin-bottom: 1px;
+}
+.dragging {
+  opacity: 0.5;
+}
