@@ -64,7 +64,15 @@
 
 ## [Nguyen Xuan Phong](https://xuanphong03.github.io/Fullstack-F8-Javascript/day-33/index.html)
 
-- Không có bất kỳ `requestAnimationFrame` nào và `animationFrameId` cũng không được khai báo hoặc sử dụng trước đó. Điều này dẫn đến việc `cancelAnimationFrame(animationFrameId)` sẽ không thực hiện được chức năng gì và có thể gây lỗi hoặc làm cho đoạn mã khó hiểu hơn.
+- **Điểm mạnh:**
+
+- Sử dụng `querySelector` và `querySelectorAll` để chọn các phần tử DOM một cách chính xác và hiệu quả.
+
+- Đoạn mã xử lý nhiều sự kiện như `dragstart`, `dragend`, và `dragover` một cách hợp lý, giúp tạo trải nghiệm kéo thả mượt mà.
+
+- Xử lý cập nhật hiển thị lại nội dung hiển thị của các phần tử trong danh sách rất tốt.
+
+- [x] **Đánh giá chung:** Bài làm rất tốt.
 
 ## [Bui Duc Duong](https://buiduong2.github.io/F8-Javascript/lession32/)
 
@@ -212,4 +220,89 @@
 
 `Note: Anh sửa lại bài làm theo nhận xét rồi sau đó báo lại cho em để em kiểm tra lại nha.`
 
-##
+## [Nguyen Quang Khai](https://khainq-k.github.io/f8-fullstack-k8/Day_33/)
+
+- Các chương học và các bài học được thể hiện dưới dạng danh sách do vậy nên sử dụng các thẻ `ul, li` thay vì sử dụng thẻ `div`.
+
+- Chưa thực hiện tự động đánh số thứ tự khi sắp xếp lại các chương và các bài học.
+
+- Lặp lại logic xử lý sự kiện `drop` và `dragover`: Đoạn mã cho sự kiện `drop` và `dragover` có cùng logic, có thể viết một hàm chung để tránh lặp lại mã.
+
+  Đề xuất sửa
+
+  ```js
+  function handleDragAndDrop(e) {
+    e.preventDefault();
+    const draggingItem = document.querySelector(".dragging");
+    const afterElement = getDragAfterElement(list, e.clientY);
+    if (afterElement == null) {
+      list.appendChild(draggingItem);
+    } else {
+      list.insertBefore(draggingItem, afterElement);
+    }
+  }
+  list.addEventListener("dragover", handleDragAndDrop);
+
+  list.addEventListener("drop", (e) => {
+    handleDragAndDrop(e);
+    updateOrder(); // Update order after drop
+  });
+  ```
+
+  - **Điểm mạnh:**
+
+  - Sử dụng các sự kiện kéo thả một cách hiệu quả: Đoạn mã tận dụng tốt các sự kiện `dragstart`, `dragend`, `dragover`, và `drop` để thực hiện chức năng kéo thả các phần tử.
+
+  - Cấu trúc code rõ ràng: Mỗi phần tử sự kiện được tách riêng và xử lý rõ ràng, giúp dễ dàng theo dõi và bảo trì mã.
+
+  - Hàm `getDragAfterElement` được viết khá tốt để tính toán vị trí phần tử trong danh sách, giúp đảm bảo tính chính xác của thao tác kéo thả.
+
+  - **Điểm yếu:**
+
+  - Lặp logic trong sự kiện `dragover` và `drop`: Cả hai sự kiện `dragover` và `drop` đều có logic tương tự nhau khi chèn phần tử kéo vào danh sách, có thể tách ra thành một hàm chung để giảm sự lặp lại.
+
+  - Chưa cẩn thận trong việc kiểm tra kỹ yêu cầu bài tập.
+
+- [x] **Đánh giá chung:** Cần chú ý thực hiện đủ yêu cầu bài tập và chủ động đặt câu hỏi cho trợ giảng để có thể giải quyết bài tập một cách tốt nhất.
+
+`Note: Anh sửa lại bài làm theo nhận xét rồi sau đó báo lại cho em để em kiểm tra lại nha.`
+
+## [Lam Hoang](https://nvhlam2211.github.io/BTVN-F8/Day-33/ex.html)
+
+- Các chương học và các bài học được thể hiện dưới dạng danh sách do vậy nên sử dụng các thẻ `ul, li` thay vì sử dụng thẻ `div`.
+
+- Nội dung của thẻ `title` nên được chỉnh sửa lại sao cho phù hợp với trang web để hỗ trợ quá trình SEO một cách hiệu quả.
+
+- **Điểm mạnh:**
+
+- Tính năng kéo thả hoàn chỉnh: Đoạn mã cho phép người dùng kéo và thả các mục trong danh sách, đồng thời cập nhật lại thứ tự của các mục.
+
+- Xử lý sự kiện đầy đủ: Các sự kiện `dragstart`, `dragend`, `dragover` được xử lý đầy đủ, đảm bảo tính năng kéo thả hoạt động mượt mà.
+
+- [x] **Đánh giá chung:** Bài làm rất tốt, tuy nhiên cần chú ý một số góp ý nêu trên để hoàn thiện hơn.
+
+`Note: Anh sửa lại bài làm theo nhận xét rồi sau đó báo lại cho em để em kiểm tra lại nha.`
+
+## [Minh Thuan](https://minhthuan1809.github.io/F8-Fullstack/day-33/)
+
+- Các chương học và các bài học được thể hiện dưới dạng danh sách do vậy nên sử dụng các thẻ `ul, li` thay vì sử dụng thẻ `div`.
+
+- Tên file `style.js` không hợp lý vì nó có thể gây nhầm lẫn với các file CSS, vốn thường được dùng để định dạng giao diện. Để tên file phản ánh đúng nội dung và chức năng, bạn nên chọn tên mô tả rõ ràng hơn về mục đích của mã JavaScript trong file này. Ví dụ: `scripts.js` hoặc `main.js`.
+
+- Chưa thực hiện tự động đánh số thứ tự khi sắp xếp lại các chương và các bài học.
+
+- **Điểm mạnh:**
+
+- Đoạn mã dễ đọc và hiểu, với các biến được đặt tên rõ ràng và cấu trúc logic dễ theo dõi.
+
+- Đoạn mã triển khai chức năng kéo thả hiệu quả, cho phép sắp xếp lại các phần tử trong danh sách.
+
+- Sử dụng `data-module` và `data-title` để lưu trữ thông tin module và bài học, giúp dễ dàng truy cập khi xử lý sự kiện kéo thả.
+
+- **Điểm yếu:**
+
+- Chưa cẩn thận trong việc kiểm tra kỹ yêu cầu bài tập.
+
+- [x] **Đánh giá chung:** Cần dành nhiều thời gian hơn cho bài tập về nhà, chú ý thực hiện đủ yêu cầu bài tập và chủ động đặt câu hỏi cho trợ giảng để có thể giải quyết bài tập một cách tốt nhất.
+
+`Note: Anh sửa lại bài làm theo nhận xét rồi sau đó báo lại cho em để em kiểm tra lại nha.`
