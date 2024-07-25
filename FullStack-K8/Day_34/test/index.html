@@ -5,59 +5,81 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google Docs Editor</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js"
-        integrity="sha512-w3u9q/DeneCSwUDjhiMNibTRh/1i/gScBVp2imNVAMCt6cUHIw6xzhzcPFIaL3Q1EbI2l+nu17q2aLJJLo4ZYg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-    <link rel="stylesheet" href="./style.css" />
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.5.1-web/css/all.min.css" />
+
+    <!-- Embed Font -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" /> -->
+
+    <!-- Favicon -->
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" /> -->
+
+    <!-- Reset CSS -->
+    <!-- <link rel="stylesheet" href="./assets/css/reset.css" /> -->
+
+    <!-- Style -->
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
 </head>
 
 <body>
-    <div id="root">
-        <div class="doc-editor">
-            <h1 class="editor-heading">Doc Editor</h1>
-            <div class="editor-tools">
-                <div class="editor-tools-left">
-                    <div class="dropdown-wrapper">
-                        <button class="dropdown-btn">
-                            File <span><i class="fa-solid fa-angle-down"></i></span>
+    <div class="doc-editor">
+        <div class="doc-editor-inner">
+            <!-- Heading -->
+            <h1 class="heading">Doc Editor</h1>
+
+            <!-- controls -->
+            <div class="controls">
+                <div class="controls-left">
+                    <div class="dropdown">
+                        <button class="file-btn">
+                            File <i class="fa-solid fa-caret-down"></i>
                         </button>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-item new-btn">
-                                <button>New</button>
-                            </li>
-                            <li class="dropdown-item txt-btn">
-                                <button>Save as TXT</button>
-                            </li>
-                            <li class="dropdown-item pdf-btn">
-                                <button>Save as PDF</button>
-                            </li>
-                        </ul>
+                        <div class="menu">
+                            <button class="new-btn">New</button>
+                            <button class="txt-btn">Save as TXT</button>
+                            <button class="pdf-btn">Save as PDF</button>
+                        </div>
                     </div>
-                    <div class="fileName-wrapper">
-                        <input type="text" name="fileName" class="fileName" value="untitled" />
+                    <div class="title">
+                        <input type="text" value="Untitled" class="input-title" />
                     </div>
                 </div>
-                <div class="editor-tools-right">
-                    <button data-element="bold" class="bold-btn"><b>b</b></button>
-                    <button data-element="underline" class="underline-btn">
-                        <u>u</u>
+                <div class="controls-right">
+                    <button id="bold" class="bold-btn option-button">
+                        b
                     </button>
-                    <button data-element="italic" class="italic-btn"><i>i</i></button>
-                    <div class="color-box">
-                        <input type="color" name="textColor" id="textColor" />
-                    </div>
+                    <button id="underline" class="underline-btn option-button">
+                        u
+                    </button>
+                    <button id="italic" class="italic-btn option-button">
+                        i
+                    </button>
+                    <input type="color" id="color" />
                 </div>
             </div>
-            <div class="editor-content" contenteditable="true" spellcheck="false"></div>
-            <div class="editor-count-box">
-                <p class="count-characters">Số kí tự: <span>0</span></p>
-                <p class="count-words">Số từ: <span>0</span></p>
+
+            <!-- Input data-->
+            <div id="content" contenteditable="true" spellcheck="false"></div>
+
+            <!-- Count the number of words -->
+            <div class="count">
+                <span>Số ký tự : <span class="character">0</span></span>
+                <span>Số từ : <span class="word">0</span></span>
             </div>
         </div>
-        <!-- <doc-editor> </doc-editor> -->
     </div>
+
+    <!-- JavaScript -->
     <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>
