@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Docs Editor</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js"
+        integrity="sha512-w3u9q/DeneCSwUDjhiMNibTRh/1i/gScBVp2imNVAMCt6cUHIw6xzhzcPFIaL3Q1EbI2l+nu17q2aLJJLo4ZYg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div id="root">
+        <div class="doc-editor">
+            <h1 class="editor-heading">Doc Editor</h1>
+            <div class="editor-tools">
+                <div class="editor-tools-left">
+                    <div class="dropdown-wrapper">
+                        <button class="dropdown-btn">
+                            File <span><i class="fa-solid fa-angle-down"></i></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item new-btn">
+                                <button>New</button>
+                            </li>
+                            <li class="dropdown-item txt-btn">
+                                <button>Save as TXT</button>
+                            </li>
+                            <li class="dropdown-item pdf-btn">
+                                <button>Save as PDF</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="fileName-wrapper">
+                        <input type="text" name="fileName" class="fileName" value="untitled" />
+                    </div>
+                </div>
+                <div class="editor-tools-right">
+                    <button data-element="bold" class="bold-btn"><b>b</b></button>
+                    <button data-element="underline" class="underline-btn">
+                        <u>u</u>
+                    </button>
+                    <button data-element="italic" class="italic-btn"><i>i</i></button>
+                    <div class="color-box">
+                        <input type="color" name="textColor" id="textColor" />
+                    </div>
+                </div>
+            </div>
+            <div class="editor-content" contenteditable="true" spellcheck="false"></div>
+            <div class="editor-count-box">
+                <p class="count-characters">Số kí tự: <span>0</span></p>
+                <p class="count-words">Số từ: <span>0</span></p>
+            </div>
+        </div>
+        <!-- <doc-editor> </doc-editor> -->
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

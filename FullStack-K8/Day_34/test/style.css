@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+.doc-editor {
+  width: 80%;
+  margin-inline: auto;
+}
+.doc-editor .editor-heading {
+  font-size: 2.4rem;
+  font-weight: 600;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #000;
+}
+.doc-editor .editor-tools {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.doc-editor .editor-tools .editor-tools-left {
+  display: flex;
+  align-items: center;
+}
+
+.doc-editor .editor-tools .editor-tools-left .dropdown-wrapper {
+  position: relative;
+}
+.doc-editor .editor-tools .editor-tools-left .dropdown-wrapper .dropdown-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: #0d6efd;
+  cursor: pointer;
+}
+.doc-editor .editor-tools .editor-tools-left .dropdown-wrapper .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  list-style: none;
+  border: 1px solid #000;
+  border-radius: 6px;
+  width: 200%;
+  padding: 10px 0;
+  background: #fff;
+}
+.doc-editor
+  .editor-tools
+  .editor-tools-left
+  .dropdown-wrapper
+  .dropdown-menu.show {
+  display: block;
+}
+.doc-editor
+  .editor-tools
+  .editor-tools-left
+  .dropdown-wrapper
+  .dropdown-menu
+  .dropdown-item {
+  padding: 5px 20px;
+}
+
+.doc-editor
+  .editor-tools
+  .editor-tools-left
+  .dropdown-wrapper
+  .dropdown-menu
+  .dropdown-item:hover {
+  background: #ededed;
+  cursor: pointer;
+}
+
+.doc-editor
+  .editor-tools
+  .editor-tools-left
+  .dropdown-wrapper
+  .dropdown-menu
+  .dropdown-item
+  button {
+  background: transparent;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.doc-editor .editor-tools .editor-tools-left .fileName-wrapper {
+  border: 1px solid #000;
+  margin-left: 10px;
+}
+.doc-editor .editor-tools .editor-tools-left .fileName-wrapper input {
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  font-size: 1.6rem;
+}
+
+.doc-editor .editor-tools .editor-tools-right {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.doc-editor .editor-tools .editor-tools-right button {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.doc-editor .editor-tools .editor-tools-right button:not(.color-btn) {
+  font-size: 1.5rem;
+  color: #fff;
+  background: #212529;
+}
+.doc-editor .editor-tools .editor-tools-right button:not(.color-btn):hover {
+  opacity: 0.85;
+}
+
+.doc-editor .editor-tools .editor-tools-right .color-box {
+  min-width: 80px;
+  height: 40px;
+}
+.doc-editor .editor-tools .editor-tools-right .color-box input {
+  height: 100%;
+}
+
+.doc-editor .editor-content {
+  width: 100%;
+  min-height: 300px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  margin: 30px 0;
+  padding: 20px;
+}
