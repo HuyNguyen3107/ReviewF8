@@ -204,3 +204,49 @@
 - [x] **Đánh giá chung:** Bài làm tốt, tuy nhiên cần lưu ý một số góp ý nêu trên để hoàn thiện hơn.
 
 `Note: Anh sửa lại bài làm theo nhận xét rồi sau đó báo lại cho em để em kiểm tra lại nha.`
+
+## [Lam Hoang](https://nvhlam2211.github.io/BTVN-F8/Day-34/ex.html)
+
+- Khi người dùng click vào `New` để tạo file mới chưa reset lại số từ và số ký tự.
+
+- Cấu trúc lồng thẻ HTML không hợp lệ: Bài làm đang lồng một bộ khai báo `<!DOCTYPE html>` và các thẻ `<html>`, `<head>`, `<body>` bên trong thẻ `<body>` của tài liệu HTML đầu tiên. Điều này là không đúng cấu trúc. Một tài liệu HTML chỉ nên có một bộ khai báo duy nhất.
+
+- **Điểm mạnh:**
+
+- Trình bày rõ ràng: Code được chia thành nhiều phần riêng biệt, dễ dàng theo dõi và hiểu các khối chức năng.
+
+- Tìm hiểu và sử dụng tốt `Blob`, `document.execCommand()` và thư viện `html2pdf` để hoàn thành yêu cầu bài tập.
+
+- **Điểm yếu:**
+
+- Chưa kiểm tra kỹ những trường hợp có thể xảy ra.
+
+- Chưa hiểu về cấu trúc cơ bản của một trang HTML.
+
+- [x] **Đánh giá chung:** Bài làm tốt, tuy nhiên cần lưu ý một số góp ý nêu trên để hoàn thiện hơn.
+
+`Note: Anh sửa lại bài làm theo nhận xét rồi sau đó báo lại cho em để em kiểm tra lại nha.`
+
+## [Le Nhung](https://nhunglt1801.github.io/f8-fullstack-k8-exercise/day-34/)
+
+- Khi người dùng nhập dữ liệu trên nhiều dòng rồi sau đó bấm tổ hợp phím `Ctrl + A` và bấm xóa toàn bộ thì số ký tự hiển thị vẫn là 1.
+
+- Bài làm chưa xử lý case đoạn văn vượt quá chiều cao của khối content, hiện nếu nhập đoạn văn dài quá sẽ bị tràn ra khỏi content.
+
+- **Điểm mạnh:**
+
+- Trình bày rõ ràng: Code được chia thành nhiều phần riêng biệt, dễ dàng theo dõi và hiểu các khối chức năng.
+
+- Sử dụng comment: Các comment được sử dụng để giải thích chức năng của từng đoạn code, giúp người đọc dễ hiểu mục đích của từng đoạn mã.
+
+- Các tên biến và hàm được đặt tên một cách mô tả, rõ ràng, giúp người đọc dễ hiểu mục đích và chức năng của chúng.
+
+- Tìm hiểu và sử dụng tốt `Blob`, `document.execCommand()` và thư viện `html2pdf` để hoàn thành yêu cầu bài tập.
+
+- **Điểm yếu:**
+
+- Chưa kiểm tra kỹ những trường hợp có thể xảy ra.
+
+- [x] **Đánh giá chung:** Bài làm tốt, tuy nhiên cần lưu ý một số góp ý nêu trên để hoàn thiện hơn.
+
+`Note: Anh sửa lại bài làm theo nhận xét rồi sau đó báo lại cho em để em kiểm tra lại nha.`
