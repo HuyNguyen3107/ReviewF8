@@ -1,59 +1,217 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Document</title>
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khu vực bất động sản</title>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;600&display=swap" rel="stylesheet" />
     <style>
-        .item {
-
-            background-color: orange;
-
-            border: solid 1.5px black;
-
+        body {
+            font-family: "Asap", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
         }
 
         .container {
-
-            display: grid;
-
-            grid-template-columns: 200px 200px 200px 200px;
-
+            width: 90%;
+            margin: 0 auto;
         }
 
-        .item-5 {
+        header {
+            text-align: left;
+            padding: 20px 0;
+            font-size: 24px;
+            font-weight: 600;
+        }
 
-            /* grid-column-start: 2; */
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
 
-            grid-column-end: 1;
+        .tab {
+            padding: 10px 20px;
+            background-color: #ffcc00;
+            border-radius: 20px;
+            margin: 0 5px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
 
+        .tab.inactive {
+            background-color: #e0e0e0;
+        }
+
+        .tab:hover {
+            background-color: #ffc107;
+        }
+
+        .tab.active {
+            background-color: #ffa000;
+        }
+
+        .tab span {
+            display: block;
+            font-size: 14px;
+            color: #666;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .region {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: calc(33.33% - 20px);
+            position: relative;
+        }
+
+        .region:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .region img {
+            width: 100%;
+            height: auto;
+        }
+
+        .region-info {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: white;
+            text-align: left;
+        }
+
+        .region-info h3 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: 600;
+            color: white;
+        }
+
+        .region-info p {
+            margin: 0;
+            font-size: 18px;
+            color: white;
+        }
+
+        .region-title {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 22px;
+            font-weight: 600;
+            color: white;
         }
     </style>
-
 </head>
 
 <body>
-
     <div class="container">
-
-        <div class="item item-1">item 1</div>
-
-        <div class="item item-2">item 2</div>
-
-        <div class="item item-3">item 3</div>
-
-        <div class="item item-4">item 4</div>
-
-        <div class="item item-5">item 5</div>
-
+        <header>KHÁM PHÁ BẤT ĐỘNG SẢN CÁC KHU VỰC NỔI BẬT</header>
+        <nav>
+            <div class="tab active">
+                Hồ Chí Minh
+                <span>50.317 bất động sản</span>
+            </div>
+            <div class="tab inactive">
+                Hà Nội
+                <span>18.767 bất động sản</span>
+            </div>
+            <div class="tab inactive">
+                Bình Dương
+                <span>7.051 bất động sản</span>
+            </div>
+            <div class="tab inactive">
+                Đồng Nai
+                <span>4.251 bất động sản</span>
+            </div>
+            <div class="tab inactive">
+                Bà Rịa Vũng Tàu
+                <span>3.968 bất động sản</span>
+            </div>
+            <div class="tab inactive">
+                Đà Nẵng
+                <span>3.680 bất động sản</span>
+            </div>
+            <div class="tab inactive">
+                Long An
+                <span>2.835 bất động sản</span>
+            </div>
+            <div class="tab inactive">
+                Quảng Ninh
+                <span>2.490 bất động sản</span>
+            </div>
+        </nav>
+        <main>
+            <div class="region">
+                <img src="https://nasaland.vn/wp-content/uploads/2022/09/Quan-2-1.jpg" alt="Quận 2" />
+                <div class="region-title">Quận 2</div>
+                <div class="region-info">
+                    <p>4,186 bất động sản đang bán</p>
+                </div>
+            </div>
+            <div class="region">
+                <img src="https://bachkhoaland.com/wp-content/uploads/2021/04/quan-7-thanh-pho-ho-chi-minh.jpg"
+                    alt="Quận 7" />
+                <div class="region-title">Quận 7</div>
+                <div class="region-info">
+                    <p>4,664 bất động sản đang bán</p>
+                </div>
+            </div>
+            <div class="region">
+                <img src="https://homeless.vn/static/uploads/ckeditor/images/cac-phuong-quan-9-1.jpg" alt="Quận 9" />
+                <div class="region-title">Quận 9</div>
+                <div class="region-info">
+                    <p>3,702 bất động sản đang bán</p>
+                </div>
+            </div>
+            <div class="region">
+                <img src="https://file4.batdongsan.com.vn/2021/03/25/JGcIp0rf/20210325110910-a0b1.jpg"
+                    alt="Quận Tân Bình" />
+                <div class="region-title">Quận Tân Bình</div>
+                <div class="region-info">
+                    <p>3,062 bất động sản đang bán</p>
+                </div>
+            </div>
+            <div class="region">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Ch%E1%BB%A3_Th%E1%BB%A7_%C4%90%E1%BB%A9c.jpg/640px-Ch%E1%BB%A3_Th%E1%BB%A7_%C4%90%E1%BB%A9c.jpg"
+                    alt="Thành phố Thủ Đức" />
+                <div class="region-title">Thành phố Thủ Đức</div>
+                <div class="region-info">
+                    <p>2,843 bất động sản đang bán</p>
+                </div>
+            </div>
+            <div class="region">
+                <img src="https://image.tienphong.vn/w1000/Uploaded/2024/dr-ofjbflyr/2023_09_22/4-2212.jpeg"
+                    alt="Huyện Bình Chánh" />
+                <div class="region-title">Huyện Bình Chánh</div>
+                <div class="region-info">
+                    <p>3,235 bất động sản đang bán</p>
+                </div>
+            </div>
+        </main>
     </div>
-
 </body>
 
 </html>

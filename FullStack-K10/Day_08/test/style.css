@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-section {
+  background-image: url("https://ircdn.vingroup.net/storage/Uploads/Photos/Landmark81banner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  position: relative;
+  color: white;
+}
+
+.background-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.profile-banner {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  z-index: 1;
+  gap: 2rem;
+}
+
+.company-logo {
+  width: 24rem;
+}
+
+.intro-section {
+  text-transform: uppercase;
+  color: white;
+}
+
+.company-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.intro-section p {
+  font-size: 2rem;
+}
+
+.intro-section span {
+  font-weight: bold;
+}
+
+.navigation-menu {
+  position: absolute;
+  bottom: -5rem;
+  right: 2rem;
+  z-index: 1;
+}
+
+.navigation-menu ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.navigation-menu ul li a {
+  font-weight: 700;
+  color: black;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.navigation-menu ul li a:hover {
+  color: red;
+}
+
+.navigation-menu ul li a:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  width: 100%;
+  height: 2px;
+  background-color: red;
+}

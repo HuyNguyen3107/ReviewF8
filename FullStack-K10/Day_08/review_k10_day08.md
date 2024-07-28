@@ -277,3 +277,149 @@
 `Điểm tổng kết: 7.67`
 
 `Note: Bạn sửa lại bài làm theo nhận xét rồi sau đó báo lại cho mình, để mình kiểm tra lại nha.`
+
+## [Tran Ngoc Duy](https://tranduyriba.github.io/bai-tap-f8/)
+
+- [x] **Bài 1:**
+
+`Điểm: 8.75`
+
+- Font chữ của giá căn hộ trong trong bài làm đang là `Asap` trong khi yêu cầu của bài tập là font `SFU`.
+
+- `font-size` của các thẻ `p` trong bài làm đang lớn hơn so với giao diện mẫu, nên giảm xuống một chút.
+
+- [x] **Bài 2:**
+
+`Điểm: 7.5`
+
+- Không nên set cả `width` và `height` cho ảnh, nên chỉ set một trong hai thuộc tính đó. Vì khi sử dụng cả 2 thuộc tính, nếu kích thước của ảnh thay đổi, thì sẽ phải thay đổi cả 2 thuộc tính `width` và `height`, điều này sẽ làm cho code không tối ưu. Hoặc sẽ làm cho tỷ lệ ảnh bị méo.
+
+- **1993** và **35** cần được tăng `font-size` và `font-weight` để giống giao diện mẫu, **1993** và **35** không phải là một đoạn văn bản vậy nên không dùng thẻ `p` để bọc.
+
+- Đây là phần header của một trang, do đó nên sử dụng thẻ `header` để bao bọc nội dung. Thẻ `header` được thiết kế để chứa các phần tử như tiêu đề, logo, và các điều hướng chính.
+
+- Thẻ `ul` trong bài làm là một danh sách chứa các liên kết chuyển hướng vậy nên cần bọc thẻ `nav` ra ngoài thẻ `ul` và nội dung của các thẻ `li` nên được bọc bởi thẻ `a`.
+
+- [x] **Bài 3:**
+
+`Điểm: 7`
+
+- `Background` của thẻ `li` có nội dung **Hồ Chí Minh** bên trong chưa giống với giao diện mẫu.
+
+- Trong bài làm có các tên `class` như `khu-vuc-place, khu-vuc, và mo-ta` là sự kết hợp giữa tiếng Anh và tiếng Việt hoặc hoàn toàn bằng tiếng Việt. Điều này không chỉ thiếu nhất quán mà còn có thể gây khó khăn cho những người khác khi đọc và bảo trì mã. Nên sử dụng ngôn ngữ nhất quán và nên ưu tiên tiếng Anh. Ví dụ, có thể đặt lại tên `class` thành `location-area, location, và description.` Việc đặt tên class như vậy sẽ giúp code dễ đọc, dễ hiểu và chuyên nghiệp hơn.
+
+- Các thẻ `div` có `class` là box nên được thay thế bởi thẻ `a` để khi người dùng click vào có thể chuyển đến trang chi tiết.
+
+- [x] **Điểm mạnh:**
+
+- Duy trì được một vài điểm mạnh của các buổi trước đó.
+
+- Sử dụng tốt các thuộc tính `css` đã được học cũng như chủ động tìm hiểu và sử dụng các thuộc tính chưa được học.
+
+- [x] **Điểm yếu:**
+
+- Chưa cải thiện được điểm yếu của các buổi trước đó.
+
+- Chưa cẩn thận trong việc kiểm tra kỹ giao diện mẫu và yêu cầu đề bài trước khi code.
+
+- Đặt tên `class` chưa hợp lý.
+
+- [x] **Đánh giá chung:** Bài làm khá tốt, tuy nhiên cần lưu ý một số góp ý nêu trên để hoàn thiện hơn.
+
+`Điểm tổng kết: 7.75`
+
+`Note: Anh sửa lại bài làm theo nhận xét rồi sau đó báo lại cho em để em kiểm tra lại nha.`
+
+## [Nguyen Hai Duong](https://github.com/tenk22/F8_fullstacks/blob/main/btvnb8/b1.html)
+
+- [x] **Bài 1:**
+
+`Điểm: 7`
+
+- Màu chữ, màu tiêu đề, font chữ, font giá căn hộ chưa đúng với yêu cầu đề bài.
+
+- Khoảng cách giữa hai dòng **Dự án...Linh Đàm.** và **Dự án có...cao cấp** đang khá sát nhau, có thể tăng khoảng cách bằng cách set cho thẻ `p` thuộc tính `line-height` với giá trị là `1.4`.
+
+- `font-weight` của giá căn hộ đang nhỏ hơn so với giao diện mẫu trong khi `font-size` của địa chỉ thì to hơn.
+
+- [x] **Bài 2:**
+
+`Điểm: 6`
+
+- Font chữ chưa đúng với yêu cầu.
+
+- Giao diện chưa đáp ứng được yêu cầu.
+
+- [x] **Bài 3:**
+
+`Điểm: 7.5`
+
+- Các thẻ `div` có `class` là **region** nên được thay thế bởi thẻ `a` để khi người dùng click vào có thể chuyển đến trang chi tiết.
+
+- Thẻ `div` nằm trong thẻ `nav` nên được thay thế bằng cặp thẻ `ul, li` để thể hiện danh sách khu vực.
+
+- Chưa có đường kẻ ngang bên cạnh tiều đề **KHÁM PHÁ BẤT ĐỘNG SẢN CÁC KHU VỰC NỔI BẬT**.
+
+- Thay thế thẻ `main` bằng thẻ `div` vì thẻ `main` đại diện cho nội dung chủ đạo của phần `body` của tài liệu, và không sử dụng trong trường hợp này.
+
+- Cần tăng `font-size` và `font-weight` của số lượng bất động sản đang bán.
+
+- [x] **Điểm mạnh:**
+
+- Vẫn duy trì được một vài điểm mạnh của các buổi trước.
+
+- [x] **Điểm yếu:**
+
+- Chưa cẩn thận trong việc kiểm tra kỹ yêu cầu và giao diện mẫu của bài tập.
+
+- [x] **Đánh giá chung:** Cần chú ý thực hiện đúng yêu cầu bài tập, chủ động đặt câu hỏi cho trợ giảng để có thể giải quyết bài tập một cách tốt nhất.
+
+`Điểm tổng kết: 6.83`
+
+`Note: Anh sửa lại bài làm theo nhận xét rồi sau đó báo lại cho em, để em kiểm tra lại nha.`
+
+## [Nguyen Truong Giang](https://nguyentruonggiang212001.github.io/f8-fullstack-k10/Assginment8/ex1.html)
+
+- [x] **Bài 1:**
+
+`Điểm: 7.5`
+
+- Font chữ của giá căn hộ trong trong bài làm đang là `Asap` trong khi yêu cầu của bài tập là font `SFU`.
+
+- Khoảng cách giữa hai dòng **Dự án...Linh Đàm.** và **Dự án có...cao cấp** đang khá sát nhau, có thể tăng khoảng cách bằng cách set cho thẻ `p` thuộc tính `line-height` với giá trị là `1.4`.
+
+- Cần tăng `font-size` và `font-weight` của giá căn hộ để giống với giao diện mẫu.
+
+- Thụt lề chưa hợp lý
+
+  ![alt text](./images/NTG.png)
+
+- [x] **Bài 2:**
+
+`Điểm: 8`
+
+- Màu của chữ **GIỚI THIỆU** chưa được highlight.
+
+- Đây là phần header của một trang, do đó nên sử dụng thẻ `header` để bao bọc nội dung. Thẻ `header` được thiết kế để chứa các phần tử như tiêu đề, logo, và các điều hướng chính.
+
+- Nhận xét về cách trình bày `css` tương tự bài 1.
+
+- [x] **Bài 3:**
+
+`Điểm: 9`
+
+- Nhận xét về cách trình bày `css` tương tự bài 1.
+
+- [x] **Điểm mạnh:**
+
+- Vẫn duy trì được một vài điểm mạnh của các buổi trước.
+
+- [x] **Điểm yếu:**
+
+- Chưa cẩn thận trong việc kiểm tra kỹ yêu cầu và giao diện mẫu của bài tập.
+
+- [x] **Đánh giá chung:** Bài làm tốt, tuy nhiên cần lưu ý một số góp ý nêu trên để hoàn thiện hơn.
+
+`Điểm tổng kết: 8.2`
+
+`Note: Anh sửa lại bài làm theo nhận xét rồi sau đó báo lại cho em, để em kiểm tra lại nha.`
