@@ -4,62 +4,159 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="Css/bai_2.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: 20px;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            text-align: center;
+            width: 500px;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .form-group.row {
+            flex-direction: row;
+            width: 500px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 224px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+
+        select {
+            color: gray;
+            position: relative;
+            width: 244px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            height: 150px;
+            resize: none;
+            font-size: 14px;
+            border-radius: 4px;
+            display: inline-block;
+            color: #777;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #007bff;
+            background-color: #007bff30;
+        }
+
+        textarea:focus+label,
+        textarea:not(:placeholder-shown)+label,
+        .form-input:focus+label,
+        .form-input:not(:placeholder-shown)+label {
+            transform: translateY(50px);
+            font-size: 1.2rem;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .form-group label {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            /* Adjusted top position for better alignment */
+            font-size: 16px;
+            color: #aaa;
+            transition: all 0.3s ease;
+            pointer-events: none;
+        }
+    </style>
 </head>
 
 <body>
-    <form action="">
-        <!-- ///// bên trái ///////// -->
-        <div class="left">
-            <div class="logo-trademark">
-                <div class="logo">JL</div>
-                <div class="trademark">Just Log</div>
+    <div class="form-container">
+        <h2>Drop Us a Line</h2>
+        <p>
+            Reach out to us from our contact form and we will get back to you
+            shortly.
+        </p>
+        <form>
+            <div class="form-group row">
+                <div class="form-group">
+                    <label for="firstName">First Name *</label>
+                    <input type="text" id="firstName" name="firstName" class="form-input" placeholder=" " />
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name *</label>
+                    <input type="text" id="lastName" name="lastName" class="form-input" placeholder=" "
+                        placeholder=" " />
+                </div>
             </div>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore
-                autem aperiam explicabo qui, quidem ipsa.
-            </p>
-            <a class="read-more" href="">Read More</a>
-            <ul>
-                <li>
-                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                </li>
-                <li>
-                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                </li>
-                <li>
-                    <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
-                </li>
-                <li>
-                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                </li>
-            </ul>
-        </div>
 
-        <div class="float">
-            <i id="arrow-right" class="fa-solid fa-arrow-right-long"></i>
-        </div>
-        <!--//////////// bên phải ///////////////-->
-        <div class="right">
-            <div>
-                <h3>Login to <span>your account</span></h3>
-                <input type="text" name="Email" class="email" placeholder="Email Address" />
-                <input type="text" name="password" class="passwword" placeholder="Password" />
-                <div class="support">
-                    <label class="remember" for="">
-                        <input type="checkbox" /> Remember me
-                    </label>
-                    <a class="forgot" href="">Forgot Passwword</a>
-                </div>
-                <button>LOGIN</button>
-                <div class="register">
-                    Don't have an account? <a href=""> Register here </a>
-                </div>
+            <div class="form-group row">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder=" " />
+                <select id="department" name="department">
+                    <option value="sales">Sales</option>
+                    <option value="support">Support</option>
+                    <option value="other">Other</option>
+                </select>
             </div>
-        </div>
-    </form>
+            <div class="form-group">
+                <textarea id="message" name="message" placeholder=" "></textarea>
+                <label for="message">Message *</label>
+            </div>
+            <button type="submit">Send message</button>
+        </form>
+    </div>
 </body>
 
 </html>
