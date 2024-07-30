@@ -2,166 +2,66 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Message Form</title>
 </head>
 
 <body>
-    <section class="container">
-        <ul class="list">
-            <li class="wrapper">
-                <div class="content">
-                    <div class="icon">
-                        <i class="fa-solid fa-building-columns"></i>
+    <!-- Main container for the message form section -->
+    <div class="message-form">
+        <div class="container">
+            <!-- Title of the form -->
+            <h2 class="form-title">Drop Us a Line</h2>
+            <!-- Description of the form -->
+            <p class="form-desc">Reach out to us from our contact form and we will get back to you shortly.</p>
+            <!-- Contact form starts here -->
+            <form>
+                <!-- Input group for first name and last name -->
+                <div class="input-group">
+                    <!-- Input box for first name -->
+                    <div class="input-box">
+                        <input type="text" id="first-name" name="first-name" required>
+                        <label for="first-name">First Name *</label>
                     </div>
-                    <h2>
-                        <a href="#">
-                            This is war, and in war the only crime is to lose
-                        </a>
-                    </h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
-                        omnis.
-                    </p>
-                    <a href="#" class="learn-more">
-                        Learn More
-                        <span><i class="fa-solid fa-arrow-right"></i></span>
-                    </a>
-                </div>
-                <div class="border"></div>
-                <figure class="image">
-                    <img src="https://fastly.picsum.photos/id/992/400/300.jpg?hmac=sLA_UCoEjpxVFpZfNcYqddAS2HT7GysZfIxJnYIcqO8"
-                        alt="" />
-                    <div class="background"></div>
-                </figure>
-            </li>
-            <li class="wrapper">
-                <div class="content">
-                    <div class="icon">
-                        <i class="fa-solid fa-briefcase"></i>
+                    <!-- Input box for last name -->
+                    <div class="input-box">
+                        <input type="text" id="last-name" name="last-name" required>
+                        <label for="last-name">Last Name *</label>
                     </div>
-                    <h2>
-                        <a href="#"> Is your business ready for Intergration </a>
-                    </h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
-                        omnis.
-                    </p>
-                    <a href="#" class="learn-more">
-                        Learn More
-                        <span><i class="fa-solid fa-arrow-right"></i></span>
-                    </a>
                 </div>
-                <div class="border"></div>
-                <div class="image">
-                    <img src="https://fastly.picsum.photos/id/992/400/300.jpg?hmac=sLA_UCoEjpxVFpZfNcYqddAS2HT7GysZfIxJnYIcqO8"
-                        alt="" />
-                    <div class="background"></div>
-                </div>
-            </li>
-            <li class="wrapper">
-                <div class="content">
-                    <div class="icon">
-                        <i class="fa-solid fa-gavel"></i>
+                <!-- End input group -->
+                <!-- Input group for email and department selection -->
+                <div class="input-group">
+                    <!-- Input box for email -->
+                    <div class="input-box">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email *</label>
                     </div>
-                    <h2>
-                        <a href="#"> Do injured workers have to be treated </a>
-                    </h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
-                        omnis.
-                    </p>
-                    <a href="#" class="learn-more">
-                        Learn More
-                        <span><i class="fa-solid fa-arrow-right"></i></span>
-                    </a>
-                </div>
-                <div class="border"></div>
-                <div class="image">
-                    <img src="https://fastly.picsum.photos/id/992/400/300.jpg?hmac=sLA_UCoEjpxVFpZfNcYqddAS2HT7GysZfIxJnYIcqO8"
-                        alt="" />
-                    <div class="background"></div>
-                </div>
-            </li>
-            <li class="wrapper">
-                <div class="content">
-                    <div class="icon">
-                        <i class="fa-regular fa-handshake"></i>
+                    <!-- Select box for department -->
+                    <div class="input-box">
+                        <label for="department" class="arrow-icon"><i class="fa-solid fa-chevron-down"></i></label>
+                        <select id="department" name="department" required>
+                            <option value="sales">Sales</option>
+                            <option value="support">Support</option>
+                            <option value="general">General Inquiry</option>
+                        </select>
                     </div>
-                    <h2>
-                        <a href="#"> Nobis occaecati nobis Repudiamus andaeum </a>
-                    </h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
-                        omnis.
-                    </p>
-                    <a href="#" class="learn-more">
-                        Learn More
-                        <span><i class="fa-solid fa-arrow-right"></i></span>
-                    </a>
                 </div>
-                <div class="border"></div>
-                <div class="image">
-                    <img src="https://fastly.picsum.photos/id/992/400/300.jpg?hmac=sLA_UCoEjpxVFpZfNcYqddAS2HT7GysZfIxJnYIcqO8"
-                        alt="" />
-                    <div class="background"></div>
+                <!-- End input group -->
+                <!-- Input box for the message -->
+                <div class="input-box">
+                    <textarea id="message" name="message" required></textarea>
+                    <label for="message">Message *</label>
                 </div>
-            </li>
-            <li class="wrapper">
-                <div class="content">
-                    <div class="icon">
-                        <i class="fa-solid fa-scale-balanced"></i>
-                    </div>
-                    <h2>
-                        <a href="#"> How is equity determined ina divorce </a>
-                    </h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
-                        omnis.
-                    </p>
-                    <a href="#" class="learn-more">
-                        Learn More
-                        <span><i class="fa-solid fa-arrow-right"></i></span>
-                    </a>
-                </div>
-                <div class="border"></div>
-                <div class="image">
-                    <img src="https://fastly.picsum.photos/id/992/400/300.jpg?hmac=sLA_UCoEjpxVFpZfNcYqddAS2HT7GysZfIxJnYIcqO8"
-                        alt="" />
-                    <div class="background"></div>
-                </div>
-            </li>
-            <li class="wrapper">
-                <div class="content">
-                    <div class="icon">
-                        <i class="fa-solid fa-handcuffs"></i>
-                    </div>
-                    <h2>
-                        <a href="#"> Amet massa vel dolor delenir recusand </a>
-                    </h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
-                        omnis.
-                    </p>
-                    <a href="#" class="learn-more">
-                        Learn More
-                        <span><i class="fa-solid fa-arrow-right"></i></span>
-                    </a>
-                </div>
-                <div class="border"></div>
-                <div class="image">
-                    <img src="https://fastly.picsum.photos/id/992/400/300.jpg?hmac=sLA_UCoEjpxVFpZfNcYqddAS2HT7GysZfIxJnYIcqO8"
-                        alt="" />
-                    <div class="background"></div>
-                </div>
-            </li>
-        </ul>
-    </section>
+                <!-- Submit button for the form -->
+                <button type="submit">Send message</button>
+            </form>
+            <!-- End of contact form -->
+        </div>
+    </div>
 </body>
 
 </html>
