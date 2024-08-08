@@ -5,6 +5,8 @@
 html {
   font-size: 62.5%;
   font-family: Lato;
+
+  background: url("../images/NHH.png") no-repeat center center/cover;
 }
 body {
   width: 60%;

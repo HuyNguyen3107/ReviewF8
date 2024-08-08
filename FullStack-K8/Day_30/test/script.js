@@ -1,95 +1,90 @@
 var progressBar = document.querySelector(".progress-bar");
-var progress = document.querySelector(".progress");
-var progressSpan = progress.querySelector("span");
-
-var offsetX = 0;
-var initialClientX = 0;
-var lastMoveSpace = 0;
-var moveSpace = 0;
+var progress = progressBar.querySelector(".progress");
+var progressSpan = progress.querySelector(".progress-bar .progress span");
 var progressBarWidth = progressBar.clientWidth;
-var isDragging = false;
-
+var rate = 0;
+var drag = false;
+var initalRate = 0;
 progressBar.addEventListener("mousedown", function (e) {
-  // console.log("Ok chưa?");
-  if (e.which !== 1) {
-    return;
+  if (e.which === 1) {
+    drag = true;
+    var offsetX = e.offsetX;
+    rate = (offsetX / progressBarWidth) * 100;
+    progress.style.width = `${rate}%`;
+    clientXSpan = e.clientX;
+    offsetLeft = offsetX;
+    document.addEventListener("mousemove", handleDrag);
   }
-  offsetX = e.offsetX;
-  isDragging = true;
-  var rate = (offsetX / progressBarWidth) * 100;
-  progress.style.width = `${rate}%`;
-  lastMoveSpace = offsetX;
-  moveSpace = offsetX;
-  var newTime = (moveSpace / progressBarWidth) * duration;
-  audio.currentTime = newTime;
-  initialClientX = e.clientX;
-  document.addEventListener("mousemove", handleDrag);
-  document.addEventListener("mouseup", handleMouseUp);
+
+  if (!drag) {
+    var currentTime = (audio.duration * rate) / 100;
+    currentTimeEl.innerText = getTimeFormat(currentTime);
+    audio.currentTime = currentTime;
+  }
 });
-// console.log(progressSpan.innerText);
 
 progressSpan.addEventListener("mousedown", function (e) {
   e.stopPropagation();
-  isDragging = true;
-  document.addEventListener("mousemove", handleDrag);
-  document.addEventListener("mouseup", handleMouseUp);
-  initialClientX = e.clientX;
-  lastMoveSpace = progress.clientWidth;
+  if (e.which === 1) {
+    drag = true;
+    clientXSpan = e.clientX;
+    offsetLeft = e.target.offsetLeft;
+    document.addEventListener("mousemove", handleDrag);
+  }
 });
-
 document.addEventListener("mouseup", function () {
+  drag = false;
   document.removeEventListener("mousemove", handleDrag);
-  lastMoveSpace = moveSpace;
+
+  var currentTime = (audio.duration * rate) / 100;
+  currentTimeEl.innerText = getTimeFormat(currentTime);
+
+  audio.currentTime = currentTime;
 });
+var clientXSpan = 0;
+var offsetLeft = 0;
+function handleDrag(e) {
+  if (drag) {
+    var spaceMove = e.clientX - clientXSpan;
+    rate = ((spaceMove + offsetLeft) / progressBarWidth) * 100;
+    if (rate < 0) {
+      rate = 0;
+    }
+    if (rate > 100) {
+      rate = 100;
+    }
+    progress.style.width = `${rate}%`;
 
-var handleDrag = function (e) {
-  var clientX = e.clientX;
-  moveSpace = clientX - initialClientX + lastMoveSpace;
-  var rate = (moveSpace / progressBarWidth) * 100;
-  if (rate < 0) {
-    rate = 0;
+    var currentTime = (audio.duration * rate) / 100;
+    currentTimeEl.innerText = getTimeFormat(currentTime);
   }
-  if (rate > 100) {
-    rate = 100;
-  }
-  progress.style.width = `${rate}%`;
-};
+}
 
-var handleMouseUp = function () {
-  document.removeEventListener("mousemove", handleDrag);
-  document.removeEventListener("mouseup", handleMouseUp);
-  lastMoveSpace = moveSpace;
-  var newTime = (moveSpace / progressBarWidth) * duration;
-  audio.currentTime = newTime;
-  isDragging = false;
-};
-
+//xây dựng player
+//audio.paused : true/false  co dang chay khong
+//audio.play(): chay
+//audio.pause(): dung
 var audio = document.querySelector("audio");
-var durationEl = progressBar.nextElementSibling;
+var playAction = document.querySelector(".player .play-action i");
 var currentTimeEl = progressBar.previousElementSibling;
-var playActionEl = document.querySelector(".play-action i");
-// console.log(durationEl);
-var duration = 0;
-var setDuration = function () {
-  duration = audio.duration;
-};
-var getTimeFormat = function (seconds) {
+var durationTimeEl = progressBar.nextElementSibling;
+
+function getTimeFormat(seconds) {
   var mins = Math.floor(seconds / 60);
   seconds = Math.floor(seconds - mins * 60);
   return `${mins < 10 ? "0" + mins : mins}:${
     seconds < 10 ? "0" + seconds : seconds
   }`;
-};
-window.addEventListener("load", function () {
-  setDuration();
-  durationEl.innerText = getTimeFormat(audio.duration);
+}
+
+audio.addEventListener("canplay", function (e) {
+  durationTimeEl.innerText = getTimeFormat(audio.duration);
+});
+audio.addEventListener("canplay", function (e) {
+  currentTimeEl.innerText = getTimeFormat(audio.currentTime);
 });
 
-playActionEl.addEventListener("click", function () {
-  // console.log("Ok chưa?");
-  // audio.paused: Kiểm tra xem nhạc có đang dừng hay không
-  // audio.play(): Phát nhạc
-  // audio.pause(): Dừng nhạc
+playAction.addEventListener("click", function () {
   if (audio.paused) {
     audio.play();
   } else {
@@ -98,57 +93,42 @@ playActionEl.addEventListener("click", function () {
 });
 
 audio.addEventListener("play", function () {
-  console.log("Đang phát");
-  playActionEl.classList.replace("fa-play", "fa-pause");
+  playAction.classList.replace("fa-play", "fa-pause");
 });
+
 audio.addEventListener("pause", function () {
-  console.log("Đang dừng");
-  playActionEl.classList.replace("fa-pause", "fa-play");
+  playAction.classList.replace("fa-pause", "fa-play");
 });
+
 audio.addEventListener("timeupdate", function () {
-  var currentTime = audio.currentTime;
-  currentTimeEl.innerText = getTimeFormat(currentTime);
-  if (isDragging === false) {
-    var rate = (currentTime / duration) * 100;
+  if (drag === false) {
+    currentTimeEl.innerText = getTimeFormat(audio.currentTime);
+
+    rate = (audio.currentTime / audio.duration) * 100;
     progress.style.width = `${rate}%`;
   }
 });
 
-if (audio) {
-  window.addEventListener("keydown", function (event) {
-    var key = event.which || event.keyCode;
-    if (key === 32) {
-      event.preventDefault();
-      audio.paused ? audio.play() : audio.pause();
-    } else if (key === 37) {
-      audio.currentTime = audio.currentTime - 10;
-    } else if (key === 39) {
-      event.preventDefault();
-      audio.currentTime = audio.currentTime + 10;
-    }
-  });
-}
-
 audio.addEventListener("ended", function () {
   audio.currentTime = 0;
-  progress.style.width = `0%`;
-  currentTimeEl.innerText = getTimeFormat(0);
-  playActionEl.classList.replace("fa-pause", "fa-play");
+  progress.style.width = 0;
+  playAction.classList.replace("fa-pause", "fa-play");
 });
 
-var hoverTimeEl = document.createElement("div");
-hoverTimeEl.classList.add("hover-time");
-progressBar.appendChild(hoverTimeEl);
-hoverTimeEl.style.display = "none";
+var hoverCurrentTime = document.querySelector(".hover-current-time");
 
 progressBar.addEventListener("mousemove", function (e) {
-  hoverTimeEl.style.display = "block";
-  var hoverRate = (e.offsetX / progressBarWidth) * duration;
-  hoverTimeEl.innerText = getTimeFormat(hoverRate);
-  hoverTimeEl.style.left = `${e.offsetX}px`;
-  //   console.log(hoverRate);
+  hoverCurrentTime.style.display = "inline-block";
+  hoverCurrentTime.style.left = `${e.offsetX}px`;
+
+  var rate1 = (e.offsetX / progressBarWidth) * 100;
+  hoverCurrentTime.innerText = getTimeFormat((audio.duration * rate1) / 100);
 });
 
-progressBar.addEventListener("mouseleave", function () {
-  hoverTimeEl.style.display = "none";
+progressBar.addEventListener("mouseout", function (e) {
+  hoverCurrentTime.style.display = "none";
+});
+
+progressSpan.addEventListener("mousemove", function (e) {
+  e.stopPropagation();
 });
