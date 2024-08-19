@@ -43,3 +43,17 @@
 - [x] **Đánh giá chung:** Bài làm tốt, tuy nhiên cần kiểm tra kỹ các trường hợp có thể xảy ra.
 
 `Note: Anh sửa lại bài làm theo nhận xét rồi sau đó báo lại cho em để em kiểm tra lại nha.`
+
+## Nguyễn Văn Thái
+
+- Trường nhập số lượng sản phẩm mà người dùng thêm vào giỏ hàng thì cần sử dụng thẻ `input` có `type="number"` thay vì `type="text"` để ngoài việc người dùng có thể dễ dàng điều chỉnh số lượng thì còn tránh việc người dùng sẽ nhập vào các giá trị không hợp lệ, tuy nhiên khi sử dụng `type="number"` vẫn cần phải kiểm tra một số trường hợp như: số lượng sản phẩm mà người dùng nhập vào là một số nhỏ hơn hoặc bằng `0`, số `e`, một số kèm với dấu `+` hoặc dấu `-` ở phía sau hoặc người dùng không nhập bất kỳ một ký tự nào tại trường số lượng sản phẩm thêm vào giỏ hàng. Trường hợp tương tự khi người dùng chỉnh sửa số lượng sản phẩm trong giỏ hàng.
+
+- Khi chưa có bất kỳ sản phẩm nào trong giỏ hàng thì nên hiển thị `Giỏ hàng không có sản phẩm` thay vì không hiển thị gì cả.
+
+- Khi người dùng xóa một sản phẩm trong giỏ hàng chưa thực hiện việc `confirm`.
+
+- Chưa sử dụng được `localStorage` và `JSON` để lưu trữ dữ liệu vào trình duyệt.
+
+- [x] **Đánh giá chung:** Bài làm chưa tốt, cần dành nhiều thời gian hơn cho bài tập và chủ động đặt câu hỏi cho trợ giảng để có thể giải quyết bài tập một cách tốt nhất.
+
+`Note: Anh sửa lại bài làm theo nhận xét rồi sau đó báo lại cho em để em kiểm tra lại nha.`

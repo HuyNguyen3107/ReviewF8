@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#title {
+  text-align: center;
+  color: #333;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+.main-controls {
+  display: flex;
+  align-items: center;
+}
+
+#filename-input {
+  width: 200px;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-left: 20px;
+}
+
+.control-btn-container {
+  display: flex;
+  gap: 10px;
+  float: right;
+}
+
+.control-btn {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #333;
+  cursor: pointer;
+}
+
+.control-btn:hover {
+  background-color: #333;
+  color: white;
+}
+
+#content {
+  min-height: 300px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 48px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.gap-3 {
+  gap: 15px;
+}
+.dropdown button {
+  background: blue;
+  border: none;
+  color: #fff;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  z-index: 1000;
+  min-width: 160px;
+  padding: 5px 0;
+}
+.dropdown-menu button {
+  background-color: #fff;
+  color: #333;
+}
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #333;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+.dropdown-menu {
+  display: none;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+.bold {
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.italic {
+  font-style: italic;
+}
