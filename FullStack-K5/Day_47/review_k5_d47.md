@@ -14,7 +14,7 @@
 
   - UI chưa được chỉn chu.
 
-  - Bài làm chưa xử lý một số cách thức đăng nhập không trả về không trả về một số thông tin như email, locale... Ví dụ đăng nhập bằng facebook thì cần check để hiển thị hay không? Hiện tại khi đăng nhập bằng facebook hoặc github thì sẽ bị trống email trên UI.
+  - Bài làm chưa xử lý một số cách thức đăng nhập không trả về không trả về một số thông tin như email, locale... Ví dụ đăng nhập bằng facebook, github thì cần check để hiển thị hay không? Hiện tại khi đăng nhập bằng facebook hoặc github thì sẽ bị trống email trên UI.
 
   - Bài làm chưa kiểm tra trường hợp email mà người dùng nhập vào không đúng định dạng.
 
