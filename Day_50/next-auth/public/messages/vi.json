@@ -1,0 +1,30 @@
+{
+  "Index": {
+    "name": "Portfolio",
+    "social_contact": "Thông tin liên hệ",
+    "skills": "Các kỹ năng của tôi",
+    "webDev_title": "Kỹ năng làm việc",
+    "webDev_skills": "REST API, ReactJS, NextJS, Redux, Context, CSS3, HTML5, UI/UX, Figma, Photoshop...",
+    "webDev_others": "Các kỹ năng khác",
+    "other_skills": "Kỹ năng nghiên cứu và tìm kiếm tương đối tốt. Tư duy làm việc, kỹ năng làm việc nhóm tốt so với độ tuổi.",
+    "histories": "Lịch sử",
+    "primary_school": "Trường Tiểu Học Đắc Sở",
+    "secondary_school": "Trường THCS Đắc Sở",
+    "high_school": "Trường THPT Vạn Xuân - Hoài Đức",
+    "ptit": "Học viện Công nghệ Bưu chính Viễn Thông",
+    "self_project": "Các dự án cá nhân",
+    "playlist": "Project PlayList",
+    "playlist_times": "Một dự án nhỏ hoàn thành trong vòng hai ngày.",
+    "playlist_code": "Một trang web đơn giản cho phép bạn tạo và chia sẻ mã PlayList. Sử dụng HTML, CSS, JS.",
+    "blog": "Project Blog",
+    "blog_times": "Một dự án lớn hơn được thực hiện trong năm ngày.",
+    "blog_code": "Một trang blog cá nhân với các bài viết về lập trình và học tập. Chỉ sử dụng HTML, CSS và JS.",
+    "trello": "Project Trello Mini",
+    "trello_times": "Một dự án thú vị đã được thực hiện trong vòng bốn ngày.",
+    "trello_code": "Trang web Trello giúp bạn quản lý công việc hiệu quả với giao diện đơn giản, đẹp mắt cùng tính năng kéo thả mượt mà. Dự án sử dụng thư viện DnD-Kit kết hợp với ReactJS.",
+    "hobbies": "Sở thích cá nhân",
+    "hobbies1": "Thưởng Thức Nhạc Nhẹ, Nhạc Rap Của Đen Vâu Và Các Nghệ Sĩ Khác,…",
+    "hobbies2": "Đọc Sách, Học Hỏi Thêm Về Các Ngôn Ngữ Lập Trình Mới Mẻ. Hiện Tại, Tôi Đang Tự Học Python",
+    "hobbies3": "Theo Dõi Các Xu Hướng Công Nghệ, Tin Tức Về Các Sản Phẩm Nổi Tiếng Như Iphone, Huawei, GoogleAI,…"
+  }
+}

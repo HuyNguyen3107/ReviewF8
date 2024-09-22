@@ -1,0 +1,85 @@
+.header {
+    // background-color: #000000e2;
+    // color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 0 4px 1px #ccc;
+
+    .header-content {
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .navigation {
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+
+            a {
+                display: flex;
+                align-items: center;
+                column-gap: 10px;
+
+                img {
+                    border-radius: 50%;
+                }
+
+                .name {
+                    font-weight: 800;
+                }
+
+            }
+
+            .nav-blogs,
+            .nav-contact,
+            .nav-profile {
+                font-weight: 800;
+                font-size: 18px;
+                color: rgb(64, 247, 64);
+            }
+        }
+    }
+
+    .contact {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+
+        .f8-avatar a img {
+            border-radius: 10px;
+        }
+
+        .facebook-icon {
+            font-size: 25px;
+        }
+
+        .youtube-icon {
+            font-size: 25px;
+        }
+
+        .theme-icon {
+            font-size: 30px;
+            cursor: pointer;
+            line-height: 0;
+            border-radius: 10px;
+            background-color: darkcyan;
+
+            i {
+                padding: 4px;
+            }
+
+
+        }
+
+        button {
+            color: #fff;
+            font-weight: 900;
+        }
+    }
+}

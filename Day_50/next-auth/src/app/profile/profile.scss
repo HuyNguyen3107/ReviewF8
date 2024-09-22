@@ -1,0 +1,112 @@
+.profile {
+    margin-top: 50px;
+
+    >div {
+        width: 80%;
+        margin: 0 auto;
+
+        >div {
+            display: flex;
+
+            margin-bottom: 10px;
+            flex-direction: column;
+
+            .user-info {
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                column-gap: 10px;
+
+                .user-img {
+                    img {
+                        width: 50px;
+                        border-radius: 50%;
+                    }
+                }
+
+                .user-detail {
+                    display: flex;
+                    flex-direction: column;
+
+                    .user-name {
+                        font-size: 18px;
+                        font-weight: 800;
+                    }
+                }
+            }
+
+            .auth-btn {
+                margin-top: 30px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .login-group {
+                    display: flex;
+                    column-gap: 10px;
+
+                    .github-login,
+                    .google-login {
+                        background-color: darkcyan;
+                        color: #fff;
+                        font-weight: 600;
+                        padding: 8px 10px;
+                        border-radius: 6px;
+                        box-shadow: 0 0 4px 1px lightblue;
+
+
+                        i {
+                            margin-right: 10px;
+                        }
+                    }
+
+                    .google-user,
+                    .github-user {
+                        display: flex;
+                        column-gap: 10px;
+                        align-items: center;
+                        background-color: darkcyan;
+                        color: #fff;
+                        font-weight: 600;
+                        padding: 8px 10px;
+                        border-radius: 6px;
+                        box-shadow: 0 0 4px 1px lightblue;
+
+
+                        img {
+                            width: 30px;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+
+                .rest {
+                    .logout {
+                        background-color: darkcyan;
+                        color: #fff;
+                        padding: 10px 20px;
+                        border-radius: 10px;
+                        font-weight: 600;
+                        box-shadow: 0 0 4px 1px lightblue;
+                    }
+                }
+            }
+        }
+    }
+
+    .posts {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+
+        >span {
+            font-size: 30px;
+            font-weight: 800;
+        }
+    }
+
+    .note {
+        margin-top: 20px;
+        text-align: center;
+    }
+}

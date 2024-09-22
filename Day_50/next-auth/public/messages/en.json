@@ -1,0 +1,30 @@
+{
+  "Index": {
+    "name": "Portfolio",
+    "social_contact": "Social Contact",
+    "skills": "My Skills",
+    "webDev_title": "Web developer",
+    "webDev_skills": "REST API, ReactJS, NextJS, Redux, Context, CSS3, HTML5, UI/UX, Figma, Photoshop...",
+    "webDev_others": "Other skills",
+    "other_skills": "Relatively good research and search skills. Working thinking, good teamwork skills compared to age.",
+    "histories": "Histories",
+    "primary_school": "Dac So primary school",
+    "secondary_school": "Dac So secondary school",
+    "high_school": "Van Xuan - Hoai Duc high school",
+    "ptit": "Posts and Telecommunications Institute of Technology",
+    "self_project": "Self Project",
+    "playlist": "Project PlayList",
+    "playlist_times": "A small project completed within two days.",
+    "playlist_code": "A simple website that allows you to create and share code PlayList. Using HTML, CSS, JS.",
+    "blog": "Project Blog",
+    "blog_times": "A bigger project done in five days.",
+    "blog_code": "A personal blog website with posts about programming and learning. Only using HTML, CSS and JS.",
+    "trello": "Project Trello Mini",
+    "trello_times": "An interesting project was made within four days.",
+    "trello_code": "The Trello website helps you manage your work effectively with a simple, beautiful interface and smooth drag and drop features. The project uses the DnD-Kit library combined with ReactJS.",
+    "hobbies": "My Hobbies",
+    "hobbies1": "Enjoy Relaxing Music, Rap Music From Đen Vâu And Other Artists,…",
+    "hobbies2": "Read Books, Learn More About New Programming Languages. Currently, I Am Self-Studying Python",
+    "hobbies3": "Follow The Technology Trends, News About Famous Products Like Iphone, Huawei, GoogleAI,…"
+  }
+}

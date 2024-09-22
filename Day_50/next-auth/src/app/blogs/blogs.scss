@@ -1,0 +1,28 @@
+.blogs {
+    background-color: darkcyan;
+    width: 400px;
+    margin: 200px auto;
+    text-align: center;
+    padding: 100px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 1px lightblue;
+
+    h1 {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .home-back {
+        display: inline-block;
+        color: #fff;
+        background-color: darkslateblue;
+        box-shadow: 0 0 4px 1px lightblue;
+        margin-top: 30px;
+        padding: 15px 30px;
+        border-radius: 99px;
+        cursor: pointer;
+        font-weight: 700;
+    }
+
+}
